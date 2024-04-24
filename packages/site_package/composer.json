@@ -1,0 +1,40 @@
+{
+    "name": "tsv/site-package",
+    "type": "typo3-cms-extension",
+    "description": "Site package for TSV-Ladbergen",
+    "authors": [
+        {
+            "name": "Sascha Nabrotzky",
+            "role": "Developer",
+            "homepage": "https://typo3.org/community/teams/documentation"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^13.1.0|dev-main",
+        "typo3/cms-fluid-styled-content": "^13.1.0|dev-main"
+    },
+    "homepage": "https://github.com/sascha-nabrotzky/tsv-ladbergen",
+    "license": "MIT",
+    "version": "1.0.0",
+    "keywords": [
+        "typo3",
+        "site package",
+        "documentation"
+    ],
+    "support": {
+        "issues": "https://github.com/sascha-nabrotzky/tsv-ladbergen/issues"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tsv\\SitePackage\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "site_package"
+        },
+        "branch-alias": {
+            "dev-master": "13.1.x-dev"
+        }
+    }
+}
