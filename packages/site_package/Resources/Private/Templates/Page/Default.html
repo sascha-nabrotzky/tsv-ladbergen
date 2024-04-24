@@ -16,8 +16,6 @@
     <main>
         <h1>Hauptbereich</h1>
 
-        <f:render partial="Maintext" />
-
         <f:for each="{mainContent}" as="contentElement">
             <f:cObject
                 typoscriptObjectPath="tt_content.{contentElement.data.CType}"
