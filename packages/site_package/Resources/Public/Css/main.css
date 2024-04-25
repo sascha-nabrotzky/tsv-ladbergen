@@ -21,4 +21,5 @@
 
 body {
     font-family: var(--ff-sans);
+    color: var(--color-black);
 }

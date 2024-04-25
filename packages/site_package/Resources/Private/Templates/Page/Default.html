@@ -1,49 +1,57 @@
 <f:layout name="Default" />
 
 <f:section name="Header">
-    <header>
-        <f:for each="{headerContent}" as="contentHeaderElement">
-            <f:cObject
-                typoscriptObjectPath="tt_content.{contentHeaderElement.data.CType}"
-                data="{contentHeaderElement.data}"
-                table="tt_content"
-            />
-        </f:for>
-    </header>
+    <f:if condition="{headerContent}">
+        <header>
+            <f:for each="{headerContent}" as="contentHeaderElement">
+                <f:cObject
+                    typoscriptObjectPath="tt_content.{contentHeaderElement.data.CType}"
+                    data="{contentHeaderElement.data}"
+                    table="tt_content"
+                />
+            </f:for>
+        </header>
+    </f:if>
 </f:section>
 
 <f:section name="Main">
-    <main>
-        <f:for each="{mainContent}" as="contentMainElement">
-            <f:cObject
-                typoscriptObjectPath="tt_content.{contentMainElement.data.CType}"
-                data="{contentMainElement.data}"
-                table="tt_content"
-            />
-        </f:for>
-    </main>
+    <f:if condition="{mainContent}">
+        <main>
+            <f:for each="{mainContent}" as="contentMainElement">
+                <f:cObject
+                    typoscriptObjectPath="tt_content.{contentMainElement.data.CType}"
+                    data="{contentMainElement.data}"
+                    table="tt_content"
+                />
+            </f:for>
+        </main>
+    </f:if>
 </f:section>
 
 <f:section name="Sidebar">
-    <main>
-        <f:for each="{sidebarContent}" as="contentSidebarElement">
-            <f:cObject
-                typoscriptObjectPath="tt_content.{contentSidebarElement.data.CType}"
-                data="{contentSidebarElement.data}"
-                table="tt_content"
-            />
-        </f:for>
-    </main>
+    <f:if condition="{sidebarContent}">
+        <aside>
+            <f:for each="{sidebarContent}" as="contentSidebarElement">
+                <f:cObject
+                    typoscriptObjectPath="tt_content.{contentSidebarElement.data.CType}"
+                    data="{contentSidebarElement.data}"
+                    table="tt_content"
+                />
+            </f:for>
+        </aside>
+    </f:if>
 </f:section>
 
 <f:section name="Footer">
-    <footer>
-        <f:for each="{footerContent}" as="contentFooterElement">
-            <f:cObject
-                typoscriptObjectPath="tt_content.{contentFooterElement.data.CType}"
-                data="{contentFooterElement.data}"
-                table="tt_content"
-            />
-        </f:for>
-    </footer>
+    <f:if condition="{footerContent}">
+        <footer>
+            <f:for each="{footerContent}" as="contentFooterElement">
+                <f:cObject
+                    typoscriptObjectPath="tt_content.{contentFooterElement.data.CType}"
+                    data="{contentFooterElement.data}"
+                    table="tt_content"
+                />
+            </f:for>
+        </footer>
+    </f:if>
 </f:section>
