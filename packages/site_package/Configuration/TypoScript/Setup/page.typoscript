@@ -39,6 +39,9 @@ page.10 {
 
         default = TEXT
         default.value = EXT:site_package/Resources/Private/Templates/Page/Default.html
+
+        startseite = TEXT
+	      startseite.value = EXT:sitepackage/Resources/Private/Templates/Page/Startseite.html
   }
 
   templateRootPaths {
@@ -93,7 +96,7 @@ page.10 {
         table = tt_content
         orderBy = sorting
         where = colPos = 3
-        as = footer
+        as = footerContent
       }
     }
 }
