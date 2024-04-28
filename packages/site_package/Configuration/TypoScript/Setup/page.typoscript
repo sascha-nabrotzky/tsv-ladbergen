@@ -6,11 +6,14 @@ config {
 
   # Falls OOOps and Error im FE nur angezeigt wird
   // contentObjectExceptionHandler = 0
+
+  htmlTag.attributes.class = no-js
 }
 
 page = PAGE
 page {
   typeNum = 0
+  bodyTagAdd = class="{$data.backend_layout}"
 
   meta {
     viewport = width=device-width, initial-scale=1
