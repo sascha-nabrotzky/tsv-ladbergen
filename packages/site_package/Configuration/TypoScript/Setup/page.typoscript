@@ -4,9 +4,6 @@ config {
   pageTitleSeparator = -
   pageTitleSeparator.noTrimWrap = | | |
 
-  # Display the Admin Panel at the bottom of pages to logged in backend users
-  admPanel = 1
-
   # Falls OOOps and Error im FE nur angezeigt wird
   // contentObjectExceptionHandler = 0
 }
@@ -14,8 +11,6 @@ config {
 page = PAGE
 page {
   typeNum = 0
-  // 10 = TEXT
-  // 10.value = Hello World!
 
   meta {
     viewport = width=device-width, initial-scale=1
@@ -24,7 +19,8 @@ page {
   }
 
   includeCSS {
-    maincss = EXT:site_package/Resources/Public/Css/post-output.css
+    normalizecss = EXT:site_package/Resources/Public/Css/normalize.css
+    maincss = EXT:site_package/Resources/Public/Css/main.css
   }
 
   includeJSFooter {
