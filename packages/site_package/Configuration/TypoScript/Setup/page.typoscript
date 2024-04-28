@@ -24,7 +24,7 @@ page {
   }
 
   includeCSS {
-    maincss = EXT:site_package/Resources/Public/Css/main.css
+    maincss = EXT:site_package/Resources/Public/Css/post-output.css
   }
 
   includeJSFooter {

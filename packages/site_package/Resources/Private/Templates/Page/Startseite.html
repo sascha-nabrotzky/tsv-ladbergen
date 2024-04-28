@@ -2,7 +2,7 @@
 
 <f:section name="Header">
     <f:if condition="{headerContent}">
-        <header>
+        <header id="header">
             <f:for each="{headerContent}" as="contentHeaderElement">
                 <f:cObject
                     typoscriptObjectPath="tt_content.{contentHeaderElement.data.CType}"
@@ -16,7 +16,7 @@
 
 <f:section name="Main">
     <f:if condition="{mainContent}">
-        <main>
+        <main id="main">
             <f:for each="{mainContent}" as="contentMainElement">
                 <f:cObject
                     typoscriptObjectPath="tt_content.{contentMainElement.data.CType}"
