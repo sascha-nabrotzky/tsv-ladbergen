@@ -1,8 +1,10 @@
 <f:layout name="Default" />
 
 <f:section name="Pageheader">
-    <f:for each="{subNavigation}" as="subNavItem">
-        <f:if condition="{subNavItem.active}"> {subNavItem.title} </f:if>
+    <f:for each="{mainNavigation}" as="mainNavItem">
+        <f:if condition="{mainNavItem.active}">
+            <h1>{mainNavItem.title}</h1>
+        </f:if>
     </f:for>
 </f:section>
 

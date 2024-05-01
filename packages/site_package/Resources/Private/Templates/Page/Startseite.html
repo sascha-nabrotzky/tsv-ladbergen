@@ -1,5 +1,13 @@
 <f:layout name="Startseite" />
 
+<f:section name="Pageheader">
+    <f:for each="{mainNavigation}" as="mainNavItem">
+        <f:if condition="{mainNavItem.active}">
+            <h1>{mainNavItem.title}</h1>
+        </f:if>
+    </f:for>
+</f:section>
+
 <f:section name="Header">
     <f:if condition="{headerContent}">
         <header id="header">
