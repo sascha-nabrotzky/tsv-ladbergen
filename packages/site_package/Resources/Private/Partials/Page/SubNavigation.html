@@ -1,0 +1,16 @@
+<nav>
+    <f:for each="{subNavigation}" as="subNavItem">
+        <li
+            class="nav-item {f:if(condition: subNavItem.active, then: 'active')}"
+        >
+            <a
+                class="nav-link"
+                href="{subNavItem.link}"
+                target="{subNavItem.target}"
+                title="{subNavItem.title}"
+            >
+                {subNavItem.title}
+            </a>
+        </li>
+    </f:for>
+</nav>

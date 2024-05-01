@@ -23,6 +23,10 @@ body {
     font-family: var(--ff-sans);
 }
 
+nav li.active a {
+    font-weight: 700;
+}
+
 /* Spacings for BE-Options */
 .frame-space-before-extra-small {
     margin-top: 1rem;
