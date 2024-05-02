@@ -1,16 +1,18 @@
 <f:layout name="Startseite" />
 
 <f:section name="Pageheader">
-    <f:for each="{mainNavigation}" as="mainNavItem">
-        <f:if condition="{mainNavItem.active}">
-            <h1>{mainNavItem.title}</h1>
-        </f:if>
-    </f:for>
+    <div class="pageheader">
+        <f:for each="{mainNavigation}" as="mainNavItem">
+            <f:if condition="{mainNavItem.active}">
+                <h1>{mainNavItem.title}</h1>
+            </f:if>
+        </f:for>
+    </div>
 </f:section>
 
 <f:section name="Header">
     <f:if condition="{headerContent}">
-        <header id="header">
+        <header class="header">
             <f:for each="{headerContent}" as="contentHeaderElement">
                 <f:cObject
                     typoscriptObjectPath="tt_content.{contentHeaderElement.data.CType}"
@@ -24,7 +26,7 @@
 
 <f:section name="Main">
     <f:if condition="{mainContent}">
-        <main id="main">
+        <main>
             <f:for each="{mainContent}" as="contentMainElement">
                 <f:cObject
                     typoscriptObjectPath="tt_content.{contentMainElement.data.CType}"

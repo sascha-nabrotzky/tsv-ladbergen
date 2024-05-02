@@ -10,8 +10,10 @@
 <f:render partial="SubNavigation" arguments="{_all}" />
 <f:render section="Pageheader" />
 <f:render section="Header" />
-<f:render section="Main" />
-<f:render section="Sidebar" />
+<section class="main-wrapper">
+    <f:render section="Main" />
+    <f:render section="Sidebar" />
+</section>
 <f:render section="Footer" />
 
 <f:debug>{_all}</f:debug>

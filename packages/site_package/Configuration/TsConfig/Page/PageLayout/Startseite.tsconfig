@@ -30,7 +30,7 @@ mod.web_layout.BackendLayouts {
                             1 {
                                 name = Footer
                                 colspan = 1
-                                colPos = 2
+                                colPos = 3
                             }
                         }
                     }
