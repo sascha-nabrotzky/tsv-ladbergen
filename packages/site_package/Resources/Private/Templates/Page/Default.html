@@ -9,6 +9,14 @@
 </f:section>
 
 <f:section name="Header">
+    <f:if condition="{subNavigation}">
+        <f:for each="{subNavigation}" as="subNavItem">
+            <f:if condition="{subNavItem.active}">
+                <h1>{subNavItem.title}</h1>
+            </f:if>
+        </f:for>
+    </f:if>
+
     <f:if condition="{headerContent}">
         <header id="header">
             <f:for each="{headerContent}" as="contentHeaderElement">
