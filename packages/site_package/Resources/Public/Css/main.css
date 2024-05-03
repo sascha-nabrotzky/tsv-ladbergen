@@ -134,6 +134,10 @@ li.active a {
     color: var(--color-white);
 }
 
+.pageheader .image-wrapper {
+    overflow: hidden;
+}
+
 .main-nav {
     display: flex;
     justify-content: center;

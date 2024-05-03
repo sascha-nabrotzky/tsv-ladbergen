@@ -1,0 +1,16 @@
+lib.headerImage = FILES
+lib.headerImage {
+    references {
+        table = pages
+        uid.data = page:uid
+        fieldName = media
+    }
+
+    renderObj = COA
+    renderObj {
+        10 = IMAGE
+        10 {
+            file.import.data = file:current:publicUrl
+        }
+    }
+}
