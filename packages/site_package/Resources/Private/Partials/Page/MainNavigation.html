@@ -1,10 +1,7 @@
 <nav class="main-nav">
     <f:for each="{mainNavigation}" as="mainNavItem">
-        <li
-            class="nav-item {f:if(condition: mainNavItem.active, then: 'active')}"
-        >
+        <li class="{f:if(condition: mainNavItem.active, then: 'active')}">
             <a
-                class="nav-link"
                 href="{mainNavItem.link}"
                 target="{mainNavItem.target}"
                 title="{mainNavItem.title}"

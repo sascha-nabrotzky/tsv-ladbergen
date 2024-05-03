@@ -2,11 +2,10 @@
 
 <f:section name="Pageheader">
     <div class="pageheader">
-        <f:for each="{mainNavigation}" as="mainNavItem">
-            <f:if condition="{mainNavItem.active}">
-                <h1>{mainNavItem.title}</h1>
-            </f:if>
-        </f:for>
+        <div>
+            <h1>TSV Ladbergen</h1>
+        </div>
+        <f:render partial="MainNavigation" arguments="{_all}" />
     </div>
 </f:section>
 

@@ -15,16 +15,11 @@
     src: url('../fonts/source-sans-3-v15-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* Global */
+/* Custom Properties */
 :root {
     --ff-sans: 'Source Sans 3', 'sans-serif';
     --p-x: 32px;
     --p-y: 16px;
-}
-
-body {
-    font-family: var(--ff-sans);
-    color: var(--color-black);
 }
 
 /* Typography */
@@ -72,52 +67,87 @@ footer {
 }
 
 .frame-space-before-extra-small {
-    margin-top: 16px;
+    margin-top: 1rem;
 }
 .frame-space-before-small {
-    margin-top: 32px;
+    margin-top: 2rem;
 }
 .frame-space-before-medium {
-    margin-top: 48px;
+    margin-top: 3rem;
 }
 .frame-space-before-large {
-    margin-top: 64px;
+    margin-top: 4rem;
 }
 .frame-space-before-extra-large {
-    margin-top: 80px;
+    margin-top: 5rem;
 }
 
 .frame-space-after-extra-small {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 .frame-space-after-small {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 .frame-space-after-medium {
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
 }
 .frame-space-after-large {
-    margin-bottom: 64px;
+    margin-bottom: 4rem;
 }
 .frame-space-after-extra-large {
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
+}
+
+/* Global */
+body {
+    color: var(--color-black);
+    font-family: var(--ff-sans);
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li.active a {
+    font-weight: 700;
 }
 
 /* Sections */
 .pageheader {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    background-color: var(--color-primary);
+    height: 40rem;
+    gap: 2rem;
 }
 
 .pageheader h1 {
-    padding: 16px 24px;
-    border: 2px solid var(--color-black);
+    border: 2px solid var(--color-white);
+    padding: 1rem 1.5rem;
     text-align: center;
-    display: inline-block;
+    color: var(--color-white);
 }
 
-nav li.active a {
-    font-weight: 700;
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.main-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: lightgray;
+    width: 10rem;
+    height: 10rem;
 }
 
 footer {

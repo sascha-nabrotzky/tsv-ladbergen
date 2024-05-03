@@ -30,30 +30,36 @@ page {
 
 page.10 = FLUIDTEMPLATE
 page.10 {
-  file.stdWrap.cObject = CASE
-  file.stdWrap.cObject {
-        key.data = pagelayout
+  templateName = TEXT
+  templateName {
+    cObject = TEXT
+    cObject {
+      data = pagelayout
+      required = 1
+      case = ucfirst
+      split {
+        token = pagets__
+        cObjNum = 1
+        1.current = 1
+      }
+    }
 
-        default = TEXT
-        default.value = EXT:site_package/Resources/Private/Templates/Page/Default.html
-
-        startseite = TEXT
-	      startseite.value = EXT:sitepackage/Resources/Private/Templates/Page/Startseite.html
+    ifEmpty = Default
   }
 
   templateRootPaths {
     0 = EXT:site_package/Resources/Private/Templates/Page/
-    // 1 = {$page.fluidtemplate.templateRootPath}
+    1 = {$page.fluidtemplate.templateRootPath}
   }
 
   partialRootPaths {
     0 = EXT:site_package/Resources/Private/Partials/Page/
-    // 1 = {$page.fluidtemplate.partialRootPath}
+    1 = {$page.fluidtemplate.partialRootPath}
   }
 
   layoutRootPaths {
     0 = EXT:site_package/Resources/Private/Layouts/Page/
-    // 1 = {$page.fluidtemplate.layoutRootPath}
+    1 = {$page.fluidtemplate.layoutRootPath}
   }
 
   dataProcessing {
