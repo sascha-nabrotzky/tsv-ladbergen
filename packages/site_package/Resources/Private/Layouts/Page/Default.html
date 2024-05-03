@@ -6,14 +6,17 @@
     }
 </f:asset.css>
 
-<f:render partial="MainNavigation" arguments="{_all}" />
-<f:render partial="SubNavigation" arguments="{_all}" />
-<f:render section="Pageheader" />
-<f:render section="Header" />
+<section class="pageheader-wrapper">
+    <f:render partial="MainNavigation" arguments="{_all}" />
+    <f:render section="Pageheader" />
+</section>
+
 <section class="main-wrapper">
+    <f:render partial="SubNavigation" arguments="{_all}" />
+    <f:render section="Header" />
     <f:render section="Main" />
     <f:render section="Sidebar" />
+    <f:render section="Footer" />
 </section>
-<f:render section="Footer" />
 
 <f:debug>{_all}</f:debug>
