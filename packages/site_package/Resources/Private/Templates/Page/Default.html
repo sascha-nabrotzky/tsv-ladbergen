@@ -2,6 +2,10 @@
 
 <f:section name="Pageheader">
     <div class="pageheader">
+        <div class="image-wrapper">
+            <f:cObject typoscriptObjectPath="lib.headerImage" />
+        </div>
+
         <f:for each="{mainNavigation}" as="mainNavItem">
             <f:if condition="{mainNavItem.active}">
                 <h1>{mainNavItem.title}</h1>
