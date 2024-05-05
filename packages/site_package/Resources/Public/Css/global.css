@@ -140,6 +140,8 @@ figure {
             2rem,
             1fr
         );
+    row-gap: 2rem;
+    padding-block: 3rem;
 
     @media (width <= 640px) {
         grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(
@@ -161,6 +163,8 @@ figure {
             1fr
         );
     column-gap: 2rem;
+    row-gap: 2rem;
+    padding-block: 3rem;
 
     @media (width <= 640px) {
         grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(
