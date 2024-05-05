@@ -1,7 +1,7 @@
 <f:layout name="Startseite" />
 
 <f:section name="Pageheader">
-    <div class="pageheader">
+    <header class="pageheader">
         <div class="image-wrapper">
             <f:cObject typoscriptObjectPath="lib.headerImage" />
         </div>
@@ -10,20 +10,20 @@
             <h1>TSV Ladbergen</h1>
         </div>
         <f:render partial="MainNavigation" arguments="{_all}" />
-    </div>
+    </header>
 </f:section>
 
-<f:section name="Header">
-    <f:if condition="{headerContent}">
-        <header class="header">
-            <f:for each="{headerContent}" as="contentHeaderElement">
+<f:section name="Extended">
+    <f:if condition="{extendedContent}">
+        <div class="extended">
+            <f:for each="{extendedContent}" as="contentExtendedElement">
                 <f:cObject
-                    typoscriptObjectPath="tt_content.{contentHeaderElement.data.CType}"
-                    data="{contentHeaderElement.data}"
+                    typoscriptObjectPath="tt_content.{contentExtendedElement.data.CType}"
+                    data="{contentExtendedElement.data}"
                     table="tt_content"
                 />
             </f:for>
-        </header>
+        </div>
     </f:if>
 </f:section>
 

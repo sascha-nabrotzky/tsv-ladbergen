@@ -15,7 +15,7 @@
     </div>
 </f:section>
 
-<f:section name="Header">
+<f:section name="Extended">
     <f:if condition="{subNavigation}">
         <f:for each="{subNavigation}" as="subNavItem">
             <f:if condition="{subNavItem.active}">
@@ -24,16 +24,16 @@
         </f:for>
     </f:if>
 
-    <f:if condition="{headerContent}">
-        <header class="header">
-            <f:for each="{headerContent}" as="contentHeaderElement">
+    <f:if condition="{extendedContent}">
+        <div class="extended">
+            <f:for each="{extendedContent}" as="contentExtendedElement">
                 <f:cObject
-                    typoscriptObjectPath="tt_content.{contentHeaderElement.data.CType}"
-                    data="{contentHeaderElement.data}"
+                    typoscriptObjectPath="tt_content.{contentExtendedElement.data.CType}"
+                    data="{contentExtendedElement.data}"
                     table="tt_content"
                 />
             </f:for>
-        </header>
+        </div>
     </f:if>
 </f:section>
 

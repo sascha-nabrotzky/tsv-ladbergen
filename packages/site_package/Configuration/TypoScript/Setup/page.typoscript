@@ -15,8 +15,8 @@ page {
 
   meta {
     viewport = width=device-width, initial-scale=1
-    description = This is the description of the content in this document.
-    keywords = These are the keywords.
+    description = TSV-Ladbergen - Die offizielle Webseite des TSV Ladbergen e.V.
+    keywords = tsv, ladbergen, tsv-ladbergen, sport, verein, fußball, handball, badminton, bogenschießen
   }
 
   includeCSS {
@@ -92,7 +92,7 @@ page.10 {
         table = tt_content
         orderBy = sorting
         where = colPos = 0
-        as = headerContent
+        as = extendedContent
       }
 
       40 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor

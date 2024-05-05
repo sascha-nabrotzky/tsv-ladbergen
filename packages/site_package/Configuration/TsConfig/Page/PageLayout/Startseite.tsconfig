@@ -10,7 +10,7 @@ mod.web_layout.BackendLayouts {
                     1 {
                         columns {
                             1 {
-                                name = Header
+                                name = Extended
                                 colspan = 1
                                 colPos = 0
                             }
