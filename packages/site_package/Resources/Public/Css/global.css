@@ -1,7 +1,6 @@
 @import url('normalize.css');
 @import url('pageheader.css');
 @import url('main-nav.css');
-@import url('main.css');
 @import url('footer.css');
 
 /* source-sans-3-regular - latin */
@@ -106,6 +105,9 @@ small {
 
 /* Global */
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
     color: var(--color-black);
     font-family: var(--ff-sans);
 }
@@ -152,7 +154,37 @@ figure {
     }
 }
 
-footer {
-    padding-inline: var(--p-x);
-    padding-block: var(--p-y);
+[data-layout='default'] .main-content-wrapper {
+    display: grid;
+    grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(
+            2rem,
+            1fr
+        );
+    column-gap: 2rem;
+
+    @media (width <= 640px) {
+        grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(
+                1rem,
+                1fr
+            );
+        column-gap: 0;
+    }
+
+    .extended,
+    main,
+    .sub-nav {
+        grid-column: 2 / 3;
+
+        @media (width <= 640px) {
+            grid-column: 2 / 4;
+        }
+    }
+
+    aside {
+        grid-column: 3 / 4;
+
+        @media (width <= 640px) {
+            grid-column: 2 / 4;
+        }
+    }
 }

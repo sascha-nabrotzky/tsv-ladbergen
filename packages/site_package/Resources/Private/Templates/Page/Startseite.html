@@ -2,13 +2,19 @@
 
 <f:section name="Pageheader">
     <header class="pageheader">
-        <div class="image-wrapper">
+        <div class="bg-image-wrapper">
             <f:cObject typoscriptObjectPath="lib.headerImage" />
         </div>
 
-        <div>
-            <h1>TSV Ladbergen</h1>
+        <div class="logo-wrapper">
+            <f:cObject
+                typoscriptObjectPath="lib.inlineSvg"
+                data="{src:'EXT:site_package/Resources/Public/Icons/TSV-Logo.svg'}"
+            />
         </div>
+
+        <h1>TSV Ladbergen</h1>
+
         <f:render partial="MainNavigation" arguments="{_all}" />
     </header>
 </f:section>

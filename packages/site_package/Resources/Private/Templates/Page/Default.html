@@ -2,15 +2,22 @@
 
 <f:section name="Pageheader">
     <div class="pageheader">
-        <div class="image-wrapper">
+        <div class="bg-image-wrapper">
             <f:cObject typoscriptObjectPath="lib.headerImage" />
         </div>
+
+        <f:link.page pageUid="1" class="logo-wrapper"
+            ><f:cObject
+                typoscriptObjectPath="lib.inlineSvg"
+                data="{src:'EXT:site_package/Resources/Public/Icons/TSV-Logo.svg'}"
+        /></f:link.page>
 
         <f:for each="{mainNavigation}" as="mainNavItem">
             <f:if condition="{mainNavItem.active}">
                 <h1>{mainNavItem.title}</h1>
             </f:if>
         </f:for>
+
         <f:render partial="MainNavigation" arguments="{_all}" />
     </div>
 </f:section>

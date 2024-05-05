@@ -1,4 +1,7 @@
 footer {
+    padding-inline: var(--p-x);
+    padding-block: var(--p-y);
+    margin-top: auto;
     background-color: var(--color-primary);
     color: var(--color-white);
 }
