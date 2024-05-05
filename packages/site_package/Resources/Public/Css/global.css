@@ -1,0 +1,123 @@
+@import url('normalize.css');
+@import url('pageheader.css');
+@import url('main-nav.css');
+@import url('main-content.css');
+@import url('footer.css');
+
+/* source-sans-3-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Source Sans 3';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/source-sans-3-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* source-sans-3-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Source Sans 3';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/source-sans-3-v15-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* Custom Properties */
+:root {
+    --ff-sans: 'Source Sans 3', 'sans-serif';
+    --p-x: 32px;
+    --p-y: 16px;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.815rem;
+}
+h2 {
+    font-size: 3.052rem;
+}
+h3 {
+    font-size: 2.441rem;
+}
+h4 {
+    font-size: 1.953rem;
+}
+h5 {
+    font-size: 1.563rem;
+}
+h6 {
+    font-size: 1.25rem;
+}
+p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+small {
+    font-size: 0.8rem;
+}
+
+/* Spacings */
+.header,
+main,
+footer {
+    padding-inline: var(--p-x);
+    padding-block: var(--p-y);
+}
+
+.frame-space-before-extra-small {
+    margin-top: 1rem;
+}
+.frame-space-before-small {
+    margin-top: 2rem;
+}
+.frame-space-before-medium {
+    margin-top: 3rem;
+}
+.frame-space-before-large {
+    margin-top: 4rem;
+}
+.frame-space-before-extra-large {
+    margin-top: 5rem;
+}
+
+.frame-space-after-extra-small {
+    margin-bottom: 1rem;
+}
+.frame-space-after-small {
+    margin-bottom: 2rem;
+}
+.frame-space-after-medium {
+    margin-bottom: 3rem;
+}
+.frame-space-after-large {
+    margin-bottom: 4rem;
+}
+.frame-space-after-extra-large {
+    margin-bottom: 5rem;
+}
+
+/* Global */
+body {
+    color: var(--color-black);
+    font-family: var(--ff-sans);
+}
+
+li {
+    list-style-type: none;
+
+    a {
+        text-decoration: none;
+    }
+
+    &.active a {
+        font-weight: 700;
+    }
+}

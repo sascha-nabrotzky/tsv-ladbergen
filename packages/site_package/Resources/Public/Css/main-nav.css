@@ -1,0 +1,16 @@
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    z-index: 3;
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: lightgray;
+        width: 10rem;
+        height: 10rem;
+    }
+}

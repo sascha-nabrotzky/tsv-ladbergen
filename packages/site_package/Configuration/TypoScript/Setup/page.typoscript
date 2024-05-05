@@ -20,12 +20,23 @@ page {
   }
 
   includeCSS {
-    normalizecss = EXT:site_package/Resources/Public/Css/normalize.css
-    maincss = EXT:site_package/Resources/Public/Css/main.css
+    globalcss = EXT:site_package/Resources/Public/Css/global.css
   }
 
   includeJSFooter {
   }
+
+  bodyTagCObject = TEXT
+  bodyTagCObject {
+    data = pagelayout
+    split {
+        token = pagets__
+        cObjNum = 1
+        1.current = 1
+      }
+    wrap = <body data-layout="|">
+  }
+
 }
 
 page.10 = FLUIDTEMPLATE
