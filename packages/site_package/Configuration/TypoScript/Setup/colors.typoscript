@@ -8,6 +8,7 @@ page.10 {
             black = {$site_package.configuration.color.black}
             white = {$site_package.configuration.color.white}
             white-50 = {$site_package.configuration.color.white-50}
+            white-25 = {$site_package.configuration.color.white-25}
         }
     }
 }

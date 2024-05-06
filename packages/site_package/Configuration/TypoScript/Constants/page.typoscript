@@ -19,5 +19,7 @@ site_package.configuration.color.spot = #8f3134
 site_package.configuration.color.black = #333333
 #cat=colors/Color/f; type=color; label=White
 site_package.configuration.color.white = #f5f5f5
-#cat=colors/Color/f_t; type=color; label=White 50%
+#cat=colors/Color/f_t50; type=color; label=White 50%
 site_package.configuration.color.white-50 = #f5f5f580
+#cat=colors/Color/f_t25; type=color; label=White 25%
+site_package.configuration.color.white-25 = #f5f5f540

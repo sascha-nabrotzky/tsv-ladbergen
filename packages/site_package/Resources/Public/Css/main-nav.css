@@ -9,9 +9,15 @@
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        background-color: var(--color-white-50);
+        background-color: var(--color-white-25);
         border: 2px solid var(--color-white);
+        color: var(--color-white);
         width: 10rem;
         height: 10rem;
+        font-size: var(--fs-xl);
+
+        &:vistited {
+            color: var(--color-white);
+        }
     }
 }
