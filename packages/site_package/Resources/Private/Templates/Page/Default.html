@@ -2,10 +2,6 @@
 
 <f:section name="Pageheader">
     <div class="pageheader">
-        <div class="bg-image-wrapper">
-            <f:cObject typoscriptObjectPath="lib.headerImage" />
-        </div>
-
         <f:link.page pageUid="1" class="logo-wrapper">
             <f:cObject
                 typoscriptObjectPath="lib.inlineSvg"
@@ -28,6 +24,10 @@
         </f:if>
 
         <f:render partial="MainNavigation" arguments="{_all}" />
+
+        <div class="bg-image-wrapper">
+            <f:cObject typoscriptObjectPath="lib.headerImage" />
+        </div>
     </div>
 </f:section>
 

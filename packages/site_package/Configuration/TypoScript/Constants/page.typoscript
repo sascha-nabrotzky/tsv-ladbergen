@@ -11,11 +11,13 @@ page {
 site_package.configuration.color.primary = #328f31
 #cat=colors/Color/b; type=color; label=Secondary Color
 site_package.configuration.color.secondary = #236422
-#cat=colors/Color/b; type=color; label=Tertiary Color
+#cat=colors/Color/c; type=color; label=Tertiary Color
 site_package.configuration.color.tertiary = #318f8c
-#cat=colors/Color/b; type=color; label=Spot Color
-site_package.configuration.color.tertiary = #8f3134
-#cat=colors/Color/c; type=color; label=Black
+#cat=colors/Color/d; type=color; label=Spot Color
+site_package.configuration.color.spot = #8f3134
+#cat=colors/Color/e; type=color; label=Black
 site_package.configuration.color.black = #333333
-#cat=colors/Color/d; type=color; label=Black
+#cat=colors/Color/f; type=color; label=White
 site_package.configuration.color.white = #f5f5f5
+#cat=colors/Color/f_t; type=color; label=White 50%
+site_package.configuration.color.white-50 = #f5f5f580

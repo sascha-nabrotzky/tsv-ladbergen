@@ -3,8 +3,11 @@ page.10 {
         colors {
             primary = {$site_package.configuration.color.primary}
             secondary = {$site_package.configuration.color.secondary}
+            tertiary = {$site_package.configuration.color.tertiary}
+            spot = {$site_package.configuration.color.spot}
             black = {$site_package.configuration.color.black}
             white = {$site_package.configuration.color.white}
+            white-50 = {$site_package.configuration.color.white-50}
         }
     }
 }

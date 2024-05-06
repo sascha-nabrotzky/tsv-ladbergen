@@ -32,6 +32,16 @@
     --brkp-xl: 1280px;
     --brkp-2xl: 1536px;
     --brkp-3xl: 1920px;
+
+    --fs-xs: 0.7rem;
+    --fs-sm: 0.8rem;
+    --fs-base: 1rem;
+    --fs-lg: 1.25rem;
+    --fs-xl: 1.563rem;
+    --fs-2xl: 1.953rem;
+    --fs-3xl: 2.441rem;
+    --fs-4xl: 3.052rem;
+    --fs-5xl: 3.815rem;
 }
 
 /* Typography */
@@ -45,29 +55,29 @@ h6 {
 }
 
 h1 {
-    font-size: 3.815rem;
+    font-size: var(--fs-5xl);
 }
 h2 {
-    font-size: 3.052rem;
+    font-size: var(--fs-4xl);
 }
 h3 {
-    font-size: 2.441rem;
+    font-size: var(--fs-3xl);
 }
 h4 {
-    font-size: 1.953rem;
+    font-size: var(--fs-2xl);
 }
 h5 {
-    font-size: 1.563rem;
+    font-size: var(--fs-xl);
 }
 h6 {
-    font-size: 1.25rem;
+    font-size: var(--fs-lg);
 }
 p {
-    font-size: 1rem;
+    font-size: var(--fs-base)
     margin: 0.5rem 0;
 }
 small {
-    font-size: 0.8rem;
+    font-size: var(--fs-sm);
 }
 
 /* Spacings */
