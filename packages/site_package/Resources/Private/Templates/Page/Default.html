@@ -6,11 +6,12 @@
             <f:cObject typoscriptObjectPath="lib.headerImage" />
         </div>
 
-        <f:link.page pageUid="1" class="logo-wrapper"
-            ><f:cObject
+        <f:link.page pageUid="1" class="logo-wrapper">
+            <f:cObject
                 typoscriptObjectPath="lib.inlineSvg"
                 data="{src:'EXT:site_package/Resources/Public/Icons/TSV-Logo.svg'}"
-        /></f:link.page>
+            />
+        </f:link.page>
 
         <f:for each="{mainNavigation}" as="mainNavItem">
             <f:if condition="{mainNavItem.active}">
@@ -18,19 +19,19 @@
             </f:if>
         </f:for>
 
+        <f:if condition="{subNavigation}">
+            <f:for each="{subNavigation}" as="subNavItem">
+                <f:if condition="{subNavItem.active}">
+                    <h2>{subNavItem.title}</h2>
+                </f:if>
+            </f:for>
+        </f:if>
+
         <f:render partial="MainNavigation" arguments="{_all}" />
     </div>
 </f:section>
 
 <f:section name="Extended">
-    <f:if condition="{subNavigation}">
-        <f:for each="{subNavigation}" as="subNavItem">
-            <f:if condition="{subNavItem.active}">
-                <h2>{subNavItem.title}</h2>
-            </f:if>
-        </f:for>
-    </f:if>
-
     <f:if condition="{extendedContent}">
         <div class="extended">
             <f:for each="{extendedContent}" as="contentExtendedElement">

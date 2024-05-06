@@ -10,7 +10,11 @@ page {
 #cat=colors/Color/a; type=color; label=Primary Color
 site_package.configuration.color.primary = #328f31
 #cat=colors/Color/b; type=color; label=Secondary Color
-site_package.configuration.color.secondary = #8f318e
+site_package.configuration.color.secondary = #236422
+#cat=colors/Color/b; type=color; label=Tertiary Color
+site_package.configuration.color.tertiary = #318f8c
+#cat=colors/Color/b; type=color; label=Spot Color
+site_package.configuration.color.tertiary = #8f3134
 #cat=colors/Color/c; type=color; label=Black
 site_package.configuration.color.black = #333333
 #cat=colors/Color/d; type=color; label=Black
