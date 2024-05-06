@@ -20,7 +20,7 @@ page {
   }
 
   includeCSS {
-    globalcss = EXT:site_package/Resources/Public/Css/global.css
+    postcss = EXT:site_package/Resources/Public/Css/post-output.css
   }
 
   includeJSFooter {

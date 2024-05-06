@@ -1,8 +1,3 @@
-@import url('normalize.css');
-@import url('pageheader.css');
-@import url('main-nav.css');
-@import url('footer.css');
-
 /* source-sans-3-regular - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
