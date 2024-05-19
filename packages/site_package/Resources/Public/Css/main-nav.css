@@ -16,6 +16,7 @@
         width: 9rem;
         height: 9rem;
         font-size: var(--fs-lg);
+        backdrop-filter: blur(5px);
 
         &:vistited {
             color: var(--color-white);

@@ -17,17 +17,18 @@
 
         <f:for each="{mainNavigation}" as="mainNavItem">
             <f:if condition="{mainNavItem.active}">
-                <h1>{mainNavItem.title}</h1>
+                <h1>
+                    {mainNavItem.title}
+                    <f:for each="{subNavigation}" as="subNavItem">
+                        <f:if condition="{subNavItem.active}">
+                            <span class="subnav-title">
+                                | {subNavItem.title}</span
+                            >
+                        </f:if>
+                    </f:for>
+                </h1>
             </f:if>
         </f:for>
-
-        <f:if condition="{subNavigation}">
-            <f:for each="{subNavigation}" as="subNavItem">
-                <f:if condition="{subNavItem.active}">
-                    <h2>{subNavItem.title}</h2>
-                </f:if>
-            </f:for>
-        </f:if>
 
         <f:render partial="MainNavigation" arguments="{_all}" />
 

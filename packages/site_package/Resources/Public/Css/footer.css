@@ -6,6 +6,10 @@ footer {
     color: var(--color-white);
     padding-block: var(--p-y);
 
+    [data-layout='default'] & {
+        column-gap: 2rem;
+    }
+
     @media (width <= 640px) {
         grid-template-columns: var(--sm-cols);
         column-gap: 0;
