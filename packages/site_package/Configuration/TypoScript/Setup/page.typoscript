@@ -88,6 +88,13 @@ page.10 {
          as = subNavigation
       }
 
+      25 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      25 {
+          special = directory
+          special.value = 11 // ID of the page where the menu should start
+          as = privacyNavigation
+      }
+
       30 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
       30 {
         table = tt_content

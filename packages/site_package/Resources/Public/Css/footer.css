@@ -18,4 +18,8 @@ footer {
     div {
         grid-column: 2 / 4;
     }
+
+    a {
+        text-decoration: none;
+    }
 }
