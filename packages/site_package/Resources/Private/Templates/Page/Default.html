@@ -1,12 +1,18 @@
 <f:layout name="Default" />
 
 <f:section name="Pageheader">
-    <div class="pageheader">
+    <header class="pageheader">
+        <div class="bg-image-wrapper">
+            <f:cObject typoscriptObjectPath="lib.headerImage" />
+            <div class="header-gradient"></div>
+        </div>
+
         <f:link.page pageUid="1" class="logo-wrapper">
             <f:cObject
                 typoscriptObjectPath="lib.inlineSvg"
                 data="{src:'EXT:site_package/Resources/Public/Icons/TSV-Logo.svg'}"
             />
+            <span>TSV Ladbergen 1921 e.V.</span>
         </f:link.page>
 
         <f:for each="{mainNavigation}" as="mainNavItem">
@@ -25,10 +31,13 @@
 
         <f:render partial="MainNavigation" arguments="{_all}" />
 
-        <div class="bg-image-wrapper">
-            <f:cObject typoscriptObjectPath="lib.headerImage" />
+        <div class="scroll-down-arrow">
+            <f:cObject
+                typoscriptObjectPath="lib.inlineSvg"
+                data="{src:'EXT:site_package/Resources/Public/Icons/arrow-down.svg'}"
+            />
         </div>
-    </div>
+    </header>
 </f:section>
 
 <f:section name="Extended">

@@ -1,7 +1,17 @@
 footer {
-    padding-inline: var(--p-x);
-    padding-block: var(--p-y);
+    display: grid;
+    grid-template-columns: var(--lg-cols);
     margin-top: auto;
     background-color: var(--color-primary);
     color: var(--color-white);
+    padding-block: var(--p-y);
+
+    @media (width <= 640px) {
+        grid-template-columns: var(--sm-cols);
+        column-gap: 0;
+    }
+
+    div {
+        grid-column: 2 / 4;
+    }
 }

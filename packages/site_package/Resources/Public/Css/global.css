@@ -39,6 +39,9 @@
     --fs-5xl: 3.815rem; /* h1 */
 
     --lh-base: 1.3; /* p */
+
+    --sm-cols: minmax(1rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(1rem, 1fr);
+    --lg-cols: minmax(2rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(2rem, 1fr);
 }
 
 /* Typography */
@@ -141,6 +144,11 @@ figure {
     }
 }
 
+a {
+    text-underline-offset: 0.6rem;
+    text-decoration-thickness: 2px;
+}
+
 /* Layout */
 .main-content-wrapper {
     padding-top: 3rem;
@@ -149,16 +157,10 @@ figure {
 
     [data-layout='startseite'] & {
         display: grid;
-        grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(
-                2rem,
-                1fr
-            );
+        grid-template-columns: var(--lg-cols);
 
         @media (width <= 640px) {
-            grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(
-                    1rem,
-                    1fr
-                );
+            grid-template-columns: var(--sm-cols);
         }
 
         .extended,
@@ -169,17 +171,11 @@ figure {
 
     [data-layout='default'] & {
         display: grid;
-        grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(
-                2rem,
-                1fr
-            );
+        grid-template-columns: var(--lg-cols);
         column-gap: 2rem;
 
         @media (width <= 640px) {
-            grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(
-                    1rem,
-                    1fr
-                );
+            grid-template-columns: var(--sm-cols);
             column-gap: 0;
         }
 

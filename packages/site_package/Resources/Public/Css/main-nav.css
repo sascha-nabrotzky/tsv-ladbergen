@@ -1,8 +1,9 @@
 .main-nav {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
-    z-index: 3;
+    z-index: 4;
 
     a {
         display: flex;
@@ -12,9 +13,9 @@
         background-color: var(--color-white-25);
         border: 2px solid var(--color-white);
         color: var(--color-white);
-        width: 10rem;
-        height: 10rem;
-        font-size: var(--fs-xl);
+        width: 9rem;
+        height: 9rem;
+        font-size: var(--fs-lg);
 
         &:vistited {
             color: var(--color-white);
