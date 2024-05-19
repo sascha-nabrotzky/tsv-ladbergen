@@ -125,9 +125,19 @@ body {
 
 li {
     list-style-type: none;
+}
 
-    &.active a {
-        font-weight: 700;
+nav {
+    a {
+        text-decoration: none;
+
+        &:vistited {
+            color: inherit;
+        }
+    }
+
+    li.active a {
+        text-decoration: underline;
     }
 }
 

@@ -84,8 +84,8 @@
 </f:section>
 
 <f:section name="Footer">
-    <f:if condition="{footerContent}">
-        <footer>
+    <footer>
+        <f:if condition="{footerContent}">
             <f:for each="{footerContent}" as="contentFooterElement">
                 <f:cObject
                     typoscriptObjectPath="tt_content.{contentFooterElement.data.CType}"
@@ -93,6 +93,8 @@
                     table="tt_content"
                 />
             </f:for>
-        </footer>
-    </f:if>
+        </f:if>
+
+        <f:render partial="PrivacyNavigation" arguments="{_all}" />
+    </footer>
 </f:section>
