@@ -9,6 +9,9 @@
             <trans-unit id="colors" xml:space="preserve">
                 <source>Colors</source>
             </trans-unit>
+            <trans-unit id="folder" xml:space="preserve">
+                <source>Folder</source>
+            </trans-unit>
         </body>
    </file>
 </xliff>

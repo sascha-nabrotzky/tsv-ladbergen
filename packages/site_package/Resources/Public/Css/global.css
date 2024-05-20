@@ -187,8 +187,7 @@ figure {
         }
 
         .extended,
-        main,
-        .sub-nav {
+        main {
             grid-column: 2 / 3;
 
             @media (width <= 640px) {

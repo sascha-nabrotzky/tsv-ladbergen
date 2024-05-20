@@ -7,6 +7,8 @@
             <div class="header-gradient"></div>
         </div>
 
+        <f:render partial="ClubNavigation" arguments="{_all}" />
+
         <f:link.page pageUid="1" class="logo-wrapper">
             <f:cObject
                 typoscriptObjectPath="lib.inlineSvg"
@@ -19,6 +21,21 @@
             <f:if condition="{mainNavItem.active}">
                 <h1>
                     {mainNavItem.title}
+                    <f:for each="{subNavigation}" as="subNavItem">
+                        <f:if condition="{subNavItem.active}">
+                            <span class="subnav-title">
+                                | {subNavItem.title}</span
+                            >
+                        </f:if>
+                    </f:for>
+                </h1>
+            </f:if>
+        </f:for>
+
+        <f:for each="{clubNavigation}" as="clubNavItem">
+            <f:if condition="{clubNavItem.active}">
+                <h1>
+                    {clubNavItem.title}
                     <f:for each="{subNavigation}" as="subNavItem">
                         <f:if condition="{subNavItem.active}">
                             <span class="subnav-title">

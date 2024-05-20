@@ -75,52 +75,60 @@ page.10 {
   }
 
   dataProcessing {
-      10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      10 = menu
       10 {
-         includeSpacer = 1
-         as = mainNavigation
-      }
-
-      20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
-      20 {
-          entryLevel = 1
-         includeSpacer = 1
-         as = subNavigation
-      }
-
-      25 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
-      25 {
           special = directory
-          special.value = 11 // ID of the page where the menu should start
+          special.value = {$site_package.configuration.folder.departments} // ID of the page where the menu should start
+          as = mainNavigation
+      }
+
+      20 = menu
+      20 {
+          entryLevel = 2
+          includeSpacer = 1
+          as = subNavigation
+      }
+
+      30 = menu
+      30 {
+          special = directory
+          special.value = {$site_package.configuration.folder.privacy} // ID of the page where the menu should start
           as = privacyNavigation
       }
 
-      30 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
-      30 {
-        table = tt_content
-        orderBy = sorting
-        where = colPos = 0
-        as = extendedContent
-      }
-
-      40 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+      40 = menu
       40 {
-        table = tt_content
-        orderBy = sorting
-        where = colPos = 1
-        as = mainContent
+          special = directory
+          special.value = {$site_package.configuration.folder.club} // ID of the page where the menu should start
+          as = clubNavigation
       }
 
       50 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
       50 {
         table = tt_content
         orderBy = sorting
-        where = colPos = 2
-        as = sidebarContent
+        where = colPos = 0
+        as = extendedContent
       }
 
       60 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
       60 {
+        table = tt_content
+        orderBy = sorting
+        where = colPos = 1
+        as = mainContent
+      }
+
+      70 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+      70 {
+        table = tt_content
+        orderBy = sorting
+        where = colPos = 2
+        as = sidebarContent
+      }
+
+      80 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+      80 {
         table = tt_content
         orderBy = sorting
         where = colPos = 3

@@ -1,0 +1,18 @@
+<f:if condition="{clubNavigation}">
+    <nav class="club-nav">
+        <f:for each="{clubNavigation}" as="clubNavItem">
+            <li
+                class="nav-item {f:if(condition: clubNavItem.active, then: 'active')}"
+            >
+                <a
+                    class="nav-link"
+                    href="{clubNavItem.link}"
+                    target="{clubNavItem.target}"
+                    title="{clubNavItem.title}"
+                >
+                    {clubNavItem.title}
+                </a>
+            </li>
+        </f:for>
+    </nav>
+</f:if>
