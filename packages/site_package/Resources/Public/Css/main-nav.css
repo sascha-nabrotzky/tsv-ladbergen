@@ -5,6 +5,10 @@
     gap: 1rem;
     z-index: 4;
 
+    @media (width <= 640px) {
+        display: none;
+    }
+
     a {
         display: flex;
         align-items: center;

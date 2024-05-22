@@ -25,6 +25,7 @@ page {
   }
 
   includeJSFooter {
+    updownbutton = EXT:site_package/Resources/Public/JavaScript/up-down-button.js
   }
 
   bodyTagCObject = TEXT

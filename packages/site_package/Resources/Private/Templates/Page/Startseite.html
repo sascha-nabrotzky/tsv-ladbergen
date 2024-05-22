@@ -6,9 +6,7 @@
             <f:cObject typoscriptObjectPath="lib.headerImage" />
             <div class="header-gradient"></div>
         </div>
-
         <f:render partial="ClubNavigation" arguments="{_all}" />
-
         <div class="logo-wrapper">
             <f:cObject
                 typoscriptObjectPath="lib.inlineSvg"
@@ -16,15 +14,8 @@
             />
             <span>TSV Ladbergen 1921 e.V.</span>
         </div>
-
         <f:render partial="MainNavigation" arguments="{_all}" />
-
-        <div class="scroll-down-arrow">
-            <f:cObject
-                typoscriptObjectPath="lib.inlineSvg"
-                data="{src:'EXT:site_package/Resources/Public/Icons/arrow-down.svg'}"
-            />
-        </div>
+        <f:render partial="UpDownButton" arguments="{_all}" />
     </header>
 </f:section>
 
@@ -44,7 +35,7 @@
 
 <f:section name="Main">
     <f:if condition="{mainContent}">
-        <main>
+        <main id="main-content">
             <f:for each="{mainContent}" as="contentMainElement">
                 <f:cObject
                     typoscriptObjectPath="tt_content.{contentMainElement.data.CType}"
