@@ -7,7 +7,8 @@
     min-height: 100vh;
     background-color: var(--color-primary);
     padding-top: 1rem;
-    padding-bottom: 3rem;
+    padding-bottom: 11rem;
+    padding-inline: 1rem;
 
     .bg-image-wrapper {
         position: absolute;

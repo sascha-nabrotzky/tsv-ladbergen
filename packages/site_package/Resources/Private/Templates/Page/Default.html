@@ -6,9 +6,7 @@
             <f:cObject typoscriptObjectPath="lib.headerImage" />
             <div class="header-gradient"></div>
         </div>
-
         <f:render partial="ClubNavigation" arguments="{_all}" />
-
         <f:link.page pageUid="1" class="logo-wrapper">
             <f:cObject
                 typoscriptObjectPath="lib.inlineSvg"
@@ -31,7 +29,6 @@
                 </h1>
             </f:if>
         </f:for>
-
         <f:for each="{clubNavigation}" as="clubNavItem">
             <f:if condition="{clubNavItem.active}">
                 <h1>
@@ -46,15 +43,9 @@
                 </h1>
             </f:if>
         </f:for>
-
         <f:render partial="MainNavigation" arguments="{_all}" />
-
-        <div class="scroll-down-arrow">
-            <f:cObject
-                typoscriptObjectPath="lib.inlineSvg"
-                data="{src:'EXT:site_package/Resources/Public/Icons/arrow-down.svg'}"
-            />
-        </div>
+        <f:render partial="MobileNavigation" arguments="{_all}" />
+        <f:render partial="UpDownButton" arguments="{_all}" />
     </header>
 </f:section>
 
@@ -74,7 +65,7 @@
 
 <f:section name="Main">
     <f:if condition="{mainContent}">
-        <main>
+        <main id="main-content">
             <f:for each="{mainContent}" as="contentMainElement">
                 <f:cObject
                     typoscriptObjectPath="tt_content.{contentMainElement.data.CType}"

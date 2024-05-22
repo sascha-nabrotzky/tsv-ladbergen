@@ -23,18 +23,18 @@ const scrollUp = () => {
 
 scrollUp();
 
-const toggleButtons = () => {
+const toggleButtonVisibility = () => {
     if (scrollDownButton && scrollUpButton) {
         window.addEventListener('scroll', () => {
             if (window.scrollY > 300) {
-                scrollDownButton.style.display = 'none';
-                scrollUpButton.style.display = 'block';
+                scrollDownButton.classList.add('hidden');
+                scrollUpButton.classList.remove('hidden');
             } else {
-                scrollDownButton.style.display = 'block';
-                scrollUpButton.style.display = 'none';
+                scrollDownButton.classList.remove('hidden');
+                scrollUpButton.classList.add('hidden');
             }
         });
     }
 };
 
-toggleButtons();
+toggleButtonVisibility();

@@ -1,0 +1,45 @@
+<nav class="mobile-nav-wrapper">
+    <f:if condition="{clubNavigation}">
+        <div class="mobile-club-nav">
+            <f:for each="{clubNavigation}" as="clubNavItem">
+                <li
+                    class="nav-item {f:if(condition: clubNavItem.active, then: 'active')}"
+                >
+                    <a
+                        class="nav-link"
+                        href="{clubNavItem.link}"
+                        target="{clubNavItem.target}"
+                        title="{clubNavItem.title}"
+                    >
+                        {clubNavItem.title}
+                    </a>
+                </li>
+            </f:for>
+        </div>
+    </f:if>
+
+    <f:if condition="{mainNavigation}">
+        <div class="mobile-main-nav">
+            <f:for each="{mainNavigation}" as="mainNavItem">
+                <li
+                    class="nav-item {f:if(condition: mainNavItem.active, then: 'active')}"
+                >
+                    <a
+                        href="{mainNavItem.link}"
+                        target="{mainNavItem.target}"
+                        title="{mainNavItem.title}"
+                    >
+                        {mainNavItem.title}
+                    </a>
+                </li>
+            </f:for>
+        </div>
+    </f:if>
+
+    <button type="button" class="mobile-nav-button">
+        <f:cObject
+            typoscriptObjectPath="lib.inlineSvg"
+            data="{src:'EXT:site_package/Resources/Public/Icons/close.svg'}"
+        />
+    </button>
+</nav>
