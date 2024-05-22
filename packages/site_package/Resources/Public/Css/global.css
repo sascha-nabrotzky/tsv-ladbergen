@@ -149,6 +149,7 @@ a {
 
 figure {
     margin: 0;
+    padding: 1rem 0;
 
     img {
         width: 100%;
@@ -202,11 +203,5 @@ figure {
                 grid-column: 2 / 4;
             }
         }
-    }
-}
-
-main {
-    & div:not(:last-of-type) {
-        margin-bottom: 2rem;
     }
 }
