@@ -1,15 +1,17 @@
 <f:if condition="{mainNavigation}">
     <nav class="main-nav">
         <f:for each="{mainNavigation}" as="mainNavItem">
-            <li class="{f:if(condition: mainNavItem.active, then: 'active')}">
-                <a
-                    href="{mainNavItem.link}"
-                    target="{mainNavItem.target}"
-                    title="{mainNavItem.title}"
-                >
-                    {mainNavItem.title}
-                </a>
-            </li>
+            <a
+                href="{mainNavItem.link}"
+                target="{mainNavItem.target}"
+                title="{mainNavItem.title}"
+                class="nav-item {f:if(condition: mainNavItem.active, then: 'active')}"
+            >
+                <span>{mainNavItem.title}</span>
+                <f:if condition="{mainNavItem.files}">
+                    <f:media file="{mainNavItem.files.0}" width="300" />
+                </f:if>
+            </a>
         </f:for>
     </nav>
 </f:if>

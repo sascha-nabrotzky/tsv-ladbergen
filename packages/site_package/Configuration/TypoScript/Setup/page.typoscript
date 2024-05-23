@@ -1,8 +1,11 @@
 // Global site configuration
 config {
   # Adjust the title tag to be displayed as “website - page title”
-  pageTitleSeparator = -
+  // pageTitleFirst = 1
+  pageTitleSeparator = |
   pageTitleSeparator.noTrimWrap = | | |
+
+  no_cache = 1
 
   # Falls OOOps and Error im FE nur angezeigt wird
   // contentObjectExceptionHandler = 0
@@ -82,6 +85,13 @@ page.10 {
           special = directory
           special.value = {$site_package.configuration.folder.departments} // ID of the page where the menu should start
           as = mainNavigation
+
+          dataProcessing {
+                    10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                    10 {
+                        references.fieldName = media
+                    }
+                }
       }
 
       20 = menu

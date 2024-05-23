@@ -1,15 +1,16 @@
 base: 'https://tsv-ladbergen.ddev.site/'
 languages:
-    - title: German
-      enabled: true
-      languageId: 0
-      base: /
-      locale: de_DE
-      navigationTitle: German
-      flag: de
-      hreflang: ''
-      websiteTitle: ''
-      fallbackType: strict
-      fallbacks: ''
+  -
+    title: German
+    enabled: true
+    languageId: 0
+    base: /
+    locale: de_DE
+    navigationTitle: German
+    flag: de
+    hreflang: ''
+    websiteTitle: ''
+    fallbackType: strict
+    fallbacks: ''
 rootPageId: 1
-websiteTitle: ''
+websiteTitle: 'TSV Ladbergen e.V.'
