@@ -19,6 +19,19 @@
         font-size: var(--fs-lg);
         padding-block: 0.5rem;
         padding-inline: 1rem;
+        background: linear-gradient(
+                to left,
+                transparent 50%,
+                var(--color-secondary) 50%
+            )
+            right;
+        background-size: 200%;
+        transition: 300ms ease-in-out;
+
+        &:hover {
+            background-position: left;
+            transition: 300ms ease-in-out;
+        }
 
         .active & {
             background-color: var(--color-white);

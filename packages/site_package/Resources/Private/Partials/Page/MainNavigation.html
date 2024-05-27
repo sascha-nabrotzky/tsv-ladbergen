@@ -9,7 +9,11 @@
             >
                 <span>{mainNavItem.title}</span>
                 <f:if condition="{mainNavItem.files}">
-                    <f:media file="{mainNavItem.files.0}" width="300" />
+                    <f:media
+                        file="{mainNavItem.files.0}"
+                        width="300"
+                        cropVariant="menu"
+                    />
                 </f:if>
             </a>
         </f:for>

@@ -42,6 +42,21 @@
 
     --sm-cols: minmax(1rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(1rem, 1fr);
     --lg-cols: minmax(2rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(2rem, 1fr);
+
+    --color-black-25: color-mix(in srgb, var(--color-black) 25%, transparent);
+    --color-black-50: color-mix(in srgb, var(--color-black) 50%, transparent);
+    --color-white-25: color-mix(in srgb, var(--color-white) 25%, transparent);
+    --color-white-50: color-mix(in srgb, var(--color-white) 50%, transparent);
+    --color-primary-25: color-mix(
+        in srgb,
+        var(--color-primary) 25%,
+        transparent
+    );
+    --color-primary-50: color-mix(
+        in srgb,
+        var(--color-primary) 50%,
+        transparent
+    );
 }
 
 /* Typography */
