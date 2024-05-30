@@ -2,7 +2,7 @@
     display: flex;
     position: fixed;
     flex-direction: column;
-    transform: translateX(calc(-100% - -6rem));
+    transform: translateX(calc(-100% - -6.2rem));
     z-index: 10;
     background-color: transparent;
     padding: 1rem;

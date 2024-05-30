@@ -7,14 +7,17 @@ footer {
     padding-block: var(--p-y);
     row-gap: 1rem;
 
-    [data-layout='default'] & {
-        column-gap: 2rem;
-    }
-
     @media (width <= 640px) {
         grid-template-columns: var(--sm-cols);
-        column-gap: 0;
         padding-block: var(--p-y) 7rem;
+    }
+
+    [data-layout='default'] & {
+        column-gap: 2rem;
+
+        @media (width <= 640px) {
+            column-gap: 0;
+        }
     }
 
     div {

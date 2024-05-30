@@ -1,18 +1,14 @@
 <f:if condition="{subNavigation}">
     <nav class="sub-nav">
         <f:for each="{subNavigation}" as="subNavItem">
-            <li
-                class="nav-item {f:if(condition: subNavItem.active, then: 'active')}"
+            <a
+                class="nav-link {f:if(condition: subNavItem.active, then: 'active')}"
+                href="{subNavItem.link}"
+                target="{subNavItem.target}"
+                title="{subNavItem.title}"
             >
-                <a
-                    class="nav-link"
-                    href="{subNavItem.link}"
-                    target="{subNavItem.target}"
-                    title="{subNavItem.title}"
-                >
-                    {subNavItem.title}
-                </a>
-            </li>
+                {subNavItem.title}
+            </a>
         </f:for>
     </nav>
 </f:if>
