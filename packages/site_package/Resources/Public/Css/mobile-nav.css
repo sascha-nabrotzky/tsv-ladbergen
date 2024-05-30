@@ -39,29 +39,8 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+}
 
-    .line {
-        transform-origin: center;
-        transition: y 300ms ease-in 300ms, rotate 300ms ease-in,
-            opacity 0ms 300ms;
-    }
-
-    .open & {
-        transition: y 300ms ease-in, rotate 300ms ease-in 300ms,
-            opacity 0ms 300ms;
-
-        .top {
-            rotate: 45deg;
-            transform: translate(4px, 19px);
-        }
-
-        .middle {
-            opacity: 0;
-        }
-
-        .bottom {
-            rotate: -45deg;
-            transform: translate(1px, -21px);
-        }
-    }
+.hidden {
+    display: none;
 }
