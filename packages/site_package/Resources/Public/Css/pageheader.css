@@ -84,24 +84,3 @@
         font-size: 4rem;
     }
 }
-
-.scroll-down-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 6;
-    width: 2rem;
-    height: 2rem;
-
-    svg {
-        transform: translateY(-0.3rem);
-        animation: slide-up-down 2s alternate infinite;
-        color: var(--color-white);
-    }
-}
-
-@keyframes slide-up-down {
-    100% {
-        transform: translateY(0.3rem);
-    }
-}

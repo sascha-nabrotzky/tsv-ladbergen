@@ -2,13 +2,17 @@
     display: flex;
     position: fixed;
     flex-direction: column;
-    transform: translateX(-80%);
+    transform: translateX(calc(-100% - -6rem));
     z-index: 10;
     background-color: transparent;
     padding: 1rem;
     inset: 0;
     row-gap: 1rem;
     transition: 300ms;
+
+    @media (width >= 640px) {
+        display: none;
+    }
 
     a {
         display: inline-block;
@@ -26,10 +30,6 @@
         transform: translateX(0%);
         background-color: var(--color-white);
     }
-
-    @media (width >= 640px) {
-        display: none;
-    }
 }
 
 .mobile-nav-button {
@@ -38,12 +38,30 @@
     bottom: 2rem;
     border: none;
     background-color: transparent;
-    width: 3rem;
-    height: 3rem;
     cursor: pointer;
 
-    svg {
-        width: 100%;
-        height: 100%;
+    .line {
+        transform-origin: center;
+        transition: y 300ms ease-in 300ms, rotate 300ms ease-in,
+            opacity 0ms 300ms;
+    }
+
+    .open & {
+        transition: y 300ms ease-in, rotate 300ms ease-in 300ms,
+            opacity 0ms 300ms;
+
+        .top {
+            rotate: 45deg;
+            transform: translate(4px, 19px);
+        }
+
+        .middle {
+            opacity: 0;
+        }
+
+        .bottom {
+            rotate: -45deg;
+            transform: translate(1px, -21px);
+        }
     }
 }

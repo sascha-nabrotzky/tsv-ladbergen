@@ -39,9 +39,36 @@
     </f:if>
 
     <button type="button" class="mobile-nav-button">
-        <f:cObject
-            typoscriptObjectPath="lib.inlineSvg"
-            data="{src:'EXT:site_package/Resources/Public/Icons/close.svg'}"
-        />
+        <svg
+            fill="var(--color-black)"
+            class="hamburger"
+            viewBox="0 0 100 100"
+            width="50"
+        >
+            <rect
+                class="line top"
+                height="10"
+                x="10"
+                y="25"
+                rx="5"
+                width="80"
+            ></rect>
+            <rect
+                class="line middle"
+                width="80"
+                height="10"
+                x="10"
+                rx="5"
+                y="47"
+            ></rect>
+            <rect
+                class="line bottom"
+                width="80"
+                height="10"
+                x="10"
+                rx="5"
+                y="70"
+            ></rect>
+        </svg>
     </button>
 </nav>
