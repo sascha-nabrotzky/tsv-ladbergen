@@ -1,7 +1,7 @@
 .scroll-down-button,
 .scroll-up-button {
     position: fixed;
-    bottom: 3rem;
+    bottom: 2rem;
     z-index: 6;
     border: 2px solid var(--color-black);
     border-radius: 3rem;
@@ -11,6 +11,10 @@
     height: 3rem;
     color: var(--color-white);
     cursor: pointer;
+
+    @media (width <= 640px) {
+        right: 1rem;
+    }
 
     svg {
         width: 100%;

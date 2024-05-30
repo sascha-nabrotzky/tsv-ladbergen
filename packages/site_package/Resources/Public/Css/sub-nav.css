@@ -4,18 +4,15 @@
     column-gap: 1rem;
     grid-column: 2 / 4;
 
-    li {
+    a {
         padding: 1rem;
         border: 1px solid var(--color-black);
     }
 
-    li.active {
+    li.active a {
         background-color: var(--color-primary);
         border: 1px solid var(--color-primary);
         color: var(--color-white);
-
-        a {
-            text-decoration: none;
-        }
+        text-decoration: none;
     }
 }

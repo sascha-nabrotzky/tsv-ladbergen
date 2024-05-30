@@ -181,9 +181,14 @@ figure {
 
 /* Layout */
 .main-content-wrapper {
-    padding-top: 3rem;
-    padding-bottom: 4rem;
-    row-gap: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+    row-gap: 4rem;
+
+    @media (width <= 640px) {
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+    }
 
     [data-layout='startseite'] & {
         display: grid;
