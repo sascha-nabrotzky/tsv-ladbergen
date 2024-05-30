@@ -76,11 +76,4 @@
         font-weight: 700;
         text-align: center;
     }
-
-    [data-layout='startseite'] & svg {
-        height: 14rem;
-    }
-    [data-layout='startseite'] & .logo-text {
-        font-size: 4rem;
-    }
 }
