@@ -11,9 +11,23 @@
 
     a {
         display: flex;
-        position: relative;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
+        text-decoration: none;
+        color: var(--color-white);
+        font-size: var(--fs-lg);
+        gap: 1rem;
+
+        &:hover img {
+            transform: scale(1.2);
+            transition: transform 300ms ease-in-out;
+        }
+        &:hover span {
+            text-decoration: underline;
+        }
+    }
+
+    .img-wrapper {
         border: 2px solid var(--color-white);
         border-radius: 50%;
         background-color: var(--color-white-25);
@@ -21,25 +35,12 @@
         height: 9rem;
         overflow: hidden;
         color: var(--color-white);
-        font-size: var(--fs-lg);
-        text-decoration: none;
-
-        &:hover img {
-            transform: scale(1.2);
-            transition: transform 300ms ease-in-out;
-        }
-
-        span {
-            z-index: 1;
-        }
     }
 
     img {
-        position: absolute;
-        z-index: 0;
+        transition: transform 300ms ease-in-out;
         width: 100%;
         height: 100%;
         object-fit: cover;
-        transition: transform 300ms ease-in-out;
     }
 }

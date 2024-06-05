@@ -76,4 +76,14 @@
         font-weight: 700;
         text-align: center;
     }
+
+    [data-layout='startseite'] & {
+        svg {
+            height: 12rem;
+        }
+
+        .logo-text {
+            font-size: 3rem;
+        }
+    }
 }
