@@ -160,10 +160,6 @@ nav {
             color: inherit;
         }
     }
-
-    li.active a {
-        text-decoration: underline;
-    }
 }
 
 a {
