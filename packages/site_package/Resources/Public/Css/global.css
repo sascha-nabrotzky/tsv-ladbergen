@@ -172,7 +172,7 @@ a {
     text-decoration-thickness: 1px;
 }
 
-[data-layout='default'] .main-content-wrapper header a {
+[data-layout='default'] .main-content header a {
     text-decoration: none;
     pointer-events: none;
 }
