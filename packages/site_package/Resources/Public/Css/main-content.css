@@ -1,4 +1,4 @@
-.main-content-wrapper {
+.main-content {
     display: grid;
     grid-template-columns: var(--grid-cols-lg);
     padding-top: 5rem;
