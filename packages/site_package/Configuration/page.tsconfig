@@ -3,3 +3,6 @@
 
 # Set default header layout to 3 (H3/H4)
 TCAdefaults.tt_content.header_layout = 3
+TCAdefaults.tt_content.space_before_class= small
+TCAdefaults.tt_content.space_after_class= small
+

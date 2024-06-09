@@ -23,6 +23,7 @@
 <f:section name="Extended">
     <f:if condition="{extendedContent}">
         <div class="extended">
+            <h4 class="news-title">News</h4>
             <f:for each="{extendedContent}" as="contentExtendedElement">
                 <f:cObject
                     typoscriptObjectPath="tt_content.{contentExtendedElement.data.CType}"
@@ -36,7 +37,7 @@
 
 <f:section name="Main">
     <f:if condition="{mainContent}">
-        <main>
+        <main id="main">
             <f:for each="{mainContent}" as="contentMainElement">
                 <f:cObject
                     typoscriptObjectPath="tt_content.{contentMainElement.data.CType}"

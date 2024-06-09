@@ -4,7 +4,7 @@ const scrollUpButton = document.querySelector?.('.scroll-up-button');
 const scrollDown = () => {
     if (scrollDownButton) {
         scrollDownButton.addEventListener('click', () => {
-            window.location.href = '#main-content';
+            window.location.href = '#main';
         });
     }
 };

@@ -90,7 +90,7 @@ page.10 {
           as = mainNavigation
 
           dataProcessing {
-                    10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                    10 = files
                     10 {
                         references.fieldName = media
                     }
@@ -118,7 +118,7 @@ page.10 {
           as = clubNavigation
       }
 
-      50 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+      50 = database-query
       50 {
         table = tt_content
         orderBy = sorting
@@ -126,7 +126,7 @@ page.10 {
         as = extendedContent
       }
 
-      60 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+      60 = database-query
       60 {
         table = tt_content
         orderBy = sorting
@@ -134,7 +134,7 @@ page.10 {
         as = mainContent
       }
 
-      70 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+      70 = database-query
       70 {
         table = tt_content
         orderBy = sorting
@@ -142,7 +142,7 @@ page.10 {
         as = sidebarContent
       }
 
-      80 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+      80 = database-query
       80 {
         table = tt_content
         orderBy = sorting

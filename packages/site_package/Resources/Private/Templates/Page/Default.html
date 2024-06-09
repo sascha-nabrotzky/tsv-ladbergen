@@ -65,7 +65,7 @@
 
 <f:section name="Main">
     <f:if condition="{mainContent}">
-        <main>
+        <main id="main">
             <f:for each="{mainContent}" as="contentMainElement">
                 <f:cObject
                     typoscriptObjectPath="tt_content.{contentMainElement.data.CType}"
@@ -79,7 +79,7 @@
 
 <f:section name="Sidebar">
     <f:if condition="{sidebarContent}">
-        <aside>
+        <aside class="sidebar">
             <f:for each="{sidebarContent}" as="contentSidebarElement">
                 <f:cObject
                     typoscriptObjectPath="tt_content.{contentSidebarElement.data.CType}"
