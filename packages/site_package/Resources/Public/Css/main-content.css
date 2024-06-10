@@ -36,10 +36,11 @@
 
         .sidebar {
             grid-column: 3 / 4;
-            grid-row-start: 2;
+            padding-left: 3rem;
 
             @media (width <= 640px) {
                 grid-column: 2 / 4;
+                padding-left: 0;
             }
         }
     }
