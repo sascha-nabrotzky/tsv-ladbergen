@@ -12,6 +12,18 @@
         height: 80vh;
     }
 
+    &::after {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        left: 0;
+        background: linear-gradient(var(--color-primary), transparent) no-repeat;
+        height: 50%;
+        content: '';
+        mix-blend-mode: multiply;
+    }
+
     .bg-image-wrapper {
         position: absolute;
         z-index: 0;
@@ -47,15 +59,6 @@
     a {
         text-decoration-color: var(--color-white);
     }
-}
-
-.header-gradient {
-    position: absolute;
-    top: 0;
-    mix-blend-mode: multiply;
-    background: linear-gradient(0deg, transparent, var(--color-primary));
-    width: 100%;
-    height: 50%;
 }
 
 .logo-wrapper {

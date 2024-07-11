@@ -23,10 +23,23 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
 
+        /* article */
         > div {
+            position: relative;
             margin: 0;
             max-height: 21.3rem;
             overflow: hidden;
+
+            &::after {
+                display: inline-block;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: linear-gradient(transparent, white) no-repeat;
+                height: 1rem;
+                content: '';
+            }
 
             h3 {
                 font-size: var(--fs-xl);
