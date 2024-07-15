@@ -5,7 +5,9 @@
         <div class="bg-image-wrapper">
             <f:cObject typoscriptObjectPath="lib.headerImage" />
         </div>
+
         <f:render partial="ClubNavigation" arguments="{_all}" />
+
         <f:link.page pageUid="1" class="logo-wrapper">
             <f:cObject
                 typoscriptObjectPath="lib.inlineSvg"
@@ -40,6 +42,11 @@
                         </f:if>
                     </f:for>
                 </h1>
+            </f:if>
+        </f:for>
+        <f:for each="{privacyNavigation}" as="privacyNavItem">
+            <f:if condition="{privacyNavItem.active}">
+                <h1>{privacyNavItem.title}</h1>
             </f:if>
         </f:for>
         <f:render partial="MainNavigation" arguments="{_all}" />

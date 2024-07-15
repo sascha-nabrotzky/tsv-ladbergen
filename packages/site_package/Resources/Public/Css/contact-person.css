@@ -22,7 +22,11 @@
         }
     }
 
-    .ce-bodytext {
+    p {
         text-align: center;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
     }
 }

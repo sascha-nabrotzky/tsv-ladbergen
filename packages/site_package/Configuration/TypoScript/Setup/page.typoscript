@@ -11,6 +11,11 @@ config {
   // contentObjectExceptionHandler = 0
   
   headerComment = Programmed by Sascha Nabrotzky -> sascha-nabrotzky.github.io
+
+  # Spam protection for email addresses
+  spamProtectEmailAddresses = -2
+  spamProtectEmailAddresses_lastDotSubst = (at)
+  spamProtectEmailAddresses_lastDotSubst = (dot)
 }
 
 page = PAGE

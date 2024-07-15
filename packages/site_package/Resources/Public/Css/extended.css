@@ -46,6 +46,10 @@
                 white-space: nowrap;
                 text-overflow: ellipsis;
                 overflow: hidden;
+
+                &:has(+ p time) {
+                    margin-bottom: 1rem;
+                }
             }
 
             h4 {

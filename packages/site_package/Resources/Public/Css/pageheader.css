@@ -18,8 +18,14 @@
         right: 0;
         top: 0;
         left: 0;
-        background: linear-gradient(var(--color-primary), transparent) no-repeat;
-        height: 50%;
+        background: linear-gradient(
+                to bottom,
+                var(--color-primary),
+                transparent,
+                var(--color-black)
+            )
+            no-repeat;
+        height: 100%;
         content: '';
         mix-blend-mode: multiply;
     }

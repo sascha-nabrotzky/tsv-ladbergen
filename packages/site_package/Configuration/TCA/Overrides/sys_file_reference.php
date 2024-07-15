@@ -10,9 +10,13 @@ $GLOBALS['TCA'][$table]['columns'][$field]['config'] = [
         'default' => [
             'title' => 'Article',
             'allowedAspectRatios' => [
-                 '16:9' => [
-                     'title' => '16:9',
+                 'Quer' => [
+                     'title' => 'Querformat',
                      'value' => 16 / 9
+                 ],
+                 'Hoch' => [
+                     'title' => 'Hochformat',
+                     'value' => 1 / 1.41
                  ],
              ],
         ],
