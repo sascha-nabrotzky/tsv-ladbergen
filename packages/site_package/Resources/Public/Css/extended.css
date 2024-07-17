@@ -9,8 +9,11 @@
 
     .news-title {
         margin-bottom: 1rem;
-        font-size: var(--fs-lg);
+        font-size: var(--fs-md);
         color: var(--color-black-50);
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 400;
     }
 
     /* article container */

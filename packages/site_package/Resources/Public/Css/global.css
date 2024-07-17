@@ -59,6 +59,26 @@
         var(--color-primary) 50%,
         transparent
     );
+    --color-secondary-25: color-mix(
+        in srgb,
+        var(--color-secondary) 25%,
+        transparent
+    );
+    --color-secondary-50: color-mix(
+        in srgb,
+        var(--color-secondary) 50%,
+        transparent
+    );
+    --color-tertiary-25: color-mix(
+        in srgb,
+        var(--color-tertiary) 25%,
+        transparent
+    );
+    --color-tertiary-50: color-mix(
+        in srgb,
+        var(--color-tertiary) 50%,
+        transparent
+    );
 }
 
 /* Headlines */
