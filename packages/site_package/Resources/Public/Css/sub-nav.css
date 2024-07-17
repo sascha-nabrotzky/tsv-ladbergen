@@ -2,7 +2,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem 1rem;
-    grid-column: 2 / 4;
+    grid-column: 3 / 5;
+
+    @media (width <= 640px) {
+        grid-column: 2 / 4;
+    }
 
     a {
         padding: 0.9rem 1.5rem;

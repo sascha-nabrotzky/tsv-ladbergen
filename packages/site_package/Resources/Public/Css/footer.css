@@ -21,7 +21,11 @@ footer {
     }
 
     div {
-        grid-column: 2 / 4;
+        grid-column: 3 / 5;
+
+        @media (width <= 640px) {
+            grid-column: 2 / 4;
+        }
     }
 
     .sponsors-title {

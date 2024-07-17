@@ -20,6 +20,7 @@
         }
     ],
     "require": {
+        "contentblocks/content-blocks": "^0.8.0",
         "tsv/site-package": "@dev",
         "typo3/cms-backend": "^13.1",
         "typo3/cms-belog": "^13.1",

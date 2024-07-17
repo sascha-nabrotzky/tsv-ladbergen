@@ -42,8 +42,8 @@
 
     --grid-cols-sm: minmax(1rem, 1fr) minmax(0, 40rem) minmax(0, 20rem)
         minmax(1rem, 1fr);
-    --grid-cols-lg: minmax(2rem, 1fr) minmax(0, 40rem) minmax(0, 20rem)
-        minmax(2rem, 1fr);
+    --grid-cols-lg: minmax(2rem, 1fr) [extended-start] 5rem minmax(0, 40rem)
+        minmax(0, 20rem) [extended-end] 5rem minmax(2rem, 1fr);
 
     --color-black-25: color-mix(in srgb, var(--color-black) 25%, transparent);
     --color-black-50: color-mix(in srgb, var(--color-black) 50%, transparent);
