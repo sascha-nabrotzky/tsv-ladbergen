@@ -1,0 +1,38 @@
+name: tsv/contact-person
+typeName: tsv_contactperson
+group: default
+prefixFields: true
+prefixType: full
+basics:
+  - TYPO3/Appearance
+fields:
+  - 
+    identifier: collection
+    labelField: header
+    type: Collection
+    minitems: 1
+    fields:
+      -
+        identifier: header
+        useExistingField: true
+        label: Name
+        type: Text
+      -
+        identifier: image
+        useExistingField: true
+        label: Bild
+        allowed: jpeg,jpg,png
+        maxitems: 1
+        type: File
+      - 
+        identifier: text
+        label: Position
+        type: Text
+      -
+        identifier: email
+        label: E-Mail
+        type: Email
+      - 
+        identifier: phone
+        label: Telefon
+        type: Text

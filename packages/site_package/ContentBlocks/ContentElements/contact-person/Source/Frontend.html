@@ -1,0 +1,34 @@
+<!-- Layout für Appearance Klassen -->
+<f:layout name="Default" />
+<!-- Zeile eingetragen damit nicht angemeckert wird -->
+<f:section name="Header" />
+<cb:asset.css
+    identifier="content-block-css-tsv-tsv/contact-person"
+    file="Frontend.css"
+/>
+<cb:asset.script
+    identifier="content-block-js-tsv-tsv/contact-person"
+    file="Frontend.js"
+/>
+<!-- Daten kommen aus processed -->
+<!-- Section Main braucht fluid styled Layout -->
+<f:section name="Main">
+    <f:for each="{data.collection}" as="person">
+        <div>
+            <h5>{person.header}</h5>
+            <f:for each="{person.image}" as="image">
+                <div>
+                    <f:image
+                        image="{image}"
+                        alt="alt text"
+                        cropVariant="menu"
+                        maxWidth="200"
+                    />
+                </div>
+            </f:for>
+            <p>{person.text}</p>
+            <p>{person.email}</p>
+            <p>{person.phone}</p>
+        </div>
+    </f:for>
+</f:section>
