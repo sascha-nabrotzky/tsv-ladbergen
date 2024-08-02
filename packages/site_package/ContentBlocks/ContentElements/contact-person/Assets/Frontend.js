@@ -1,1 +1,1 @@
-/* Created by Content Blocks */
+console.log('Hello from contact-person/Assets/Frontend.js');

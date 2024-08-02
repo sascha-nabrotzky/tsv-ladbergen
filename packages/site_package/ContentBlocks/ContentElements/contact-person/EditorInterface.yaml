@@ -7,8 +7,11 @@ basics:
   - TYPO3/Appearance
 fields:
   - 
+    identifier: header
+    label: Header
+    type: Text
+  - 
     identifier: collection
-    labelField: header
     type: Collection
     minitems: 1
     fields:

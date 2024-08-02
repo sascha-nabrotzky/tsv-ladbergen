@@ -2,6 +2,7 @@
 <f:layout name="Default" />
 <!-- Zeile eingetragen damit nicht angemeckert wird -->
 <f:section name="Header" />
+
 <cb:asset.css
     identifier="content-block-css-tsv-tsv/contact-person"
     file="Frontend.css"
@@ -10,25 +11,35 @@
     identifier="content-block-js-tsv-tsv/contact-person"
     file="Frontend.js"
 />
+
 <!-- Daten kommen aus processed -->
 <!-- Section Main braucht fluid styled Layout -->
 <f:section name="Main">
-    <f:for each="{data.collection}" as="person">
-        <div>
-            <h5>{person.header}</h5>
-            <f:for each="{person.image}" as="image">
-                <div>
-                    <f:image
-                        image="{image}"
-                        alt="alt text"
-                        cropVariant="menu"
-                        maxWidth="200"
+    <div class="contact-person-wrapper">
+        <f:for each="{data.collection}" as="person">
+            <div class="contact-person">
+                <h5>{person.header}</h5>
+                <f:if condition="{person.image}">
+                    <f:for each="{person.image}" as="image">
+                        <div class="image-wrapper">
+                            <f:image
+                                image="{image}"
+                                alt="alt text"
+                                cropVariant="menu"
+                                maxWidth="200"
+                            />
+                        </div>
+                    </f:for>
+                </f:if>
+                <div class="text-wrapper">
+                    <span>{person.text}</span>
+                    <f:link.email
+                        email="{person.email}"
+                        subject="Anfrage von TSV-Website"
                     />
+                    <a href="{person.phone}">{person.phone}</a>
                 </div>
-            </f:for>
-            <p>{person.text}</p>
-            <p>{person.email}</p>
-            <p>{person.phone}</p>
-        </div>
-    </f:for>
+            </div>
+        </f:for>
+    </div>
 </f:section>
