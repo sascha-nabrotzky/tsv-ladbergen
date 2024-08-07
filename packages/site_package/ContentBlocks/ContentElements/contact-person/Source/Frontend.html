@@ -15,10 +15,12 @@
 <!-- Daten kommen aus processed -->
 <!-- Section Main braucht fluid styled Layout -->
 <f:section name="Main">
+    <f:if condition="{data.header}">
+        <h6 class="contact-person-headline">{data.header}</h6>
+    </f:if>
     <div class="contact-person-wrapper">
         <f:for each="{data.collection}" as="person">
-            <div class="contact-person">
-                <h5>{person.header}</h5>
+            <div class="contact-person-content">
                 <f:if condition="{person.image}">
                     <f:for each="{person.image}" as="image">
                         <div class="image-wrapper">
@@ -32,12 +34,24 @@
                     </f:for>
                 </f:if>
                 <div class="text-wrapper">
-                    <span>{person.text}</span>
-                    <f:link.email
-                        email="{person.email}"
-                        subject="Anfrage von TSV-Website"
-                    />
-                    <a href="{person.phone}">{person.phone}</a>
+                    <div class="name">
+                        <h5>{person.header}</h5>
+                        <span>{person.text}</span>
+                    </div>
+                    <f:if condition="{person.email} || {person.phone}">
+                        <div class="links">
+                            <f:if condition="{person.email}">
+                                <f:link.email
+                                    email="{person.email}"
+                                    subject="Anfrage von TSV-Website"
+                                    >E-Mail</f:link.email
+                                >
+                            </f:if>
+                            <f:if condition="{person.phone}">
+                                <a href="{person.phone}">{person.phone}</a>
+                            </f:if>
+                        </div>
+                    </f:if>
                 </div>
             </div>
         </f:for>
