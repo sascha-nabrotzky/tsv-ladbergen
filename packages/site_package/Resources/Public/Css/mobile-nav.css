@@ -5,7 +5,7 @@
     transform: translateX(calc(-100% - -6.2rem));
     z-index: 10;
     background-color: transparent;
-    padding: 1rem;
+    padding: 4rem 1rem 1rem;
     inset: 0;
     row-gap: 1rem;
     transition: 300ms;
@@ -35,7 +35,7 @@
 .mobile-nav-button {
     position: absolute;
     right: 2rem;
-    bottom: 2rem;
+    top: 2rem;
     border: none;
     background-color: transparent;
     cursor: pointer;

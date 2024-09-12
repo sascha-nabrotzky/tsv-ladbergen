@@ -88,7 +88,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
+    margin-block: 0 0.5rem;
     word-break: break-word;
     hyphens: auto;
     text-wrap: balance;
@@ -166,21 +166,17 @@ body {
     font-family: var(--ff-sans);
 }
 
-h3:has(+ h4) {
-    margin-bottom: 0.5rem;
-}
-
-h5:has(+ h6) {
-    margin-bottom: 0.2rem;
+header:has(:is(h1, h2, h3, h4, h5, h6)) > :last-child {
+    margin-bottom: 1rem;
 }
 
 p {
     margin: 0.5rem 0;
+    hyphens: auto;
 
     &:has(time) {
-        text-align: right;
         color: var(--color-black-50);
-        margin-block: 0;
+        margin-block: 1rem;
     }
 }
 
@@ -213,6 +209,15 @@ a {
 /* Images */
 figure {
     margin: 1rem 0;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+figcaption {
+    margin-top: 0.5rem;
 }
 .ce-image img {
     max-width: 600px;

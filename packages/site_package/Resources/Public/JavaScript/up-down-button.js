@@ -1,15 +1,4 @@
-const scrollDownButton = document.querySelector?.('.scroll-down-button');
 const scrollUpButton = document.querySelector?.('.scroll-up-button');
-
-const scrollDown = () => {
-    if (scrollDownButton) {
-        scrollDownButton.addEventListener('click', () => {
-            window.location.href = '#main';
-        });
-    }
-};
-
-scrollDown();
 
 const scrollUp = () => {
     if (scrollUpButton) {
@@ -24,13 +13,11 @@ const scrollUp = () => {
 scrollUp();
 
 const toggleButtonVisibility = () => {
-    if (scrollDownButton && scrollUpButton) {
+    if (scrollUpButton) {
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
-                scrollDownButton.classList.add('hidden');
+            if (window.scrollY > 500) {
                 scrollUpButton.classList.remove('hidden');
             } else {
-                scrollDownButton.classList.remove('hidden');
                 scrollUpButton.classList.add('hidden');
             }
         });
