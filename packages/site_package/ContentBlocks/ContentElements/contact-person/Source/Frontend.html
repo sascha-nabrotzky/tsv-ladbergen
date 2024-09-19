@@ -34,9 +34,10 @@
                     </f:for>
                 </f:if>
                 <div class="text-wrapper">
-                    <div class="name">
-                        <h5>{person.header}</h5>
-                        <span>{person.text}</span>
+                    <div>
+                        <h5 class="name">{person.header}</h5>
+                        <p class="position">{person.text}</p>
+                        <p class="info">{person.info}</p>
                     </div>
                     <f:if condition="{person.email} || {person.phone}">
                         <div class="links">

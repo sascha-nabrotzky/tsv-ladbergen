@@ -31,6 +31,10 @@ fields:
         identifier: text
         label: Position
         type: Text
+      - 
+        identifier: info
+        label: Info
+        type: Text
       -
         identifier: email
         label: E-Mail

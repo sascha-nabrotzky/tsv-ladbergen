@@ -35,8 +35,12 @@
         row-gap: 1rem;
         text-align: center;
 
-        .name h5 {
+        .name {
             margin-bottom: 0.5rem;
+        }
+
+        .info {
+            color: var(--color-black-50);
         }
 
         .links {
