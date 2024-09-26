@@ -21,13 +21,6 @@
     --p-x: 32px;
     --p-y: 16px;
 
-    --brkp-sm: 640px;
-    --brkp-md: 768px;
-    --brkp-lg: 1024px;
-    --brkp-xl: 1280px;
-    --brkp-2xl: 1536px;
-    --brkp-3xl: 1920px;
-
     --fs-xs: 0.7rem;
     --fs-sm: 0.8rem; /* small */
     --fs-base: 1rem; /* p */
@@ -96,15 +89,31 @@ h6 {
 
 h1 {
     font-size: var(--fs-5xl);
+
+    @media (width <= 640px) {
+        font-size: var(--fs-3xl);
+    }
 }
 h2 {
     font-size: var(--fs-4xl);
+
+    @media (width <= 640px) {
+        font-size: var(--fs-3xl);
+    }
 }
 h3 {
     font-size: var(--fs-3xl);
+
+    @media (width <= 640px) {
+        font-size: var(--fs-2xl);
+    }
 }
 h4 {
     font-size: var(--fs-2xl);
+
+    @media (width <= 640px) {
+        font-size: var(--fs-xl);
+    }
 }
 h5 {
     font-size: var(--fs-xl);
@@ -164,6 +173,7 @@ body {
     min-height: 100svh;
     color: var(--color-black);
     font-family: var(--ff-sans);
+    background-color: var(--color-white);
 }
 
 header:has(:is(h1, h2, h3, h4, h5, h6)) > :last-child {

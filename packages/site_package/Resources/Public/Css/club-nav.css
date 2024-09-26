@@ -23,7 +23,7 @@
         background: linear-gradient(
                 to left,
                 transparent 50%,
-                var(--color-secondary) 50%
+                var(--color-tertiary) 50%
             )
             right;
         background-size: 200%;

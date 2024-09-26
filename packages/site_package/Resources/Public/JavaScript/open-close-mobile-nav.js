@@ -8,6 +8,7 @@ const toggleMobileNav = () => {
         mobileNav.classList.toggle('open');
         menuIconOpen.classList.toggle('hidden');
         menuIconClose.classList.toggle('hidden');
+        console.log(getComputedStyle(menuIconClose).display);
     });
 };
 
