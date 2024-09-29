@@ -38,7 +38,8 @@
                 right: 0;
                 bottom: 0;
                 left: 0;
-                background: linear-gradient(transparent, white 50%) no-repeat;
+                background: linear-gradient(transparent, var(--color-white) 50%)
+                    no-repeat;
                 height: 2rem;
                 content: '';
             }

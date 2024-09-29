@@ -1,0 +1,23 @@
+<cb:asset.css
+    identifier="content-block-css-tsv-tsv/download-button"
+    file="Frontend.css"
+/>
+<cb:asset.script
+    identifier="content-block-js-tsv-tsv/download-button"
+    file="Frontend.js"
+/>
+
+<a
+    href="{f:uri.typolink(parameter: data.url)}"
+    class="download-button"
+    target="_blank"
+>
+    <div class="download-button__icon">
+        <f:image
+            src="EXT:site_package/Resources/Public/ContentBlocks/tsv/download-button/PDF-Icon.png"
+            alt="alt text"
+        />
+    </div>
+
+    {data.header}</a
+>
