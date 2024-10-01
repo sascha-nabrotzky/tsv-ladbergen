@@ -41,7 +41,7 @@
     justify-content: center;
     z-index: 100;
     border: none;
-    background-color: var(--color-white);
+    background-color: var(--color-white-50);
     cursor: pointer;
     padding: 0.3rem;
     width: 3rem;

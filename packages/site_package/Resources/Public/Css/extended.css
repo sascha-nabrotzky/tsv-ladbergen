@@ -17,7 +17,7 @@
     }
 
     /* article container */
-    > div {
+    .frame-type-shortcut {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 0.7rem;
@@ -27,7 +27,6 @@
             position: relative;
             margin: 0;
             border: 1px solid var(--color-black-50);
-            border-radius: 4px;
             padding: 1rem;
             max-height: 25rem;
             overflow: hidden;
