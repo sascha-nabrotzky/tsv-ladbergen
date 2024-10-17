@@ -2,7 +2,7 @@
 return [
     'BE' => [
         'debug' => true,
-        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$STdLa2VRa0ZnaGtaVm1KQQ$bhtkpuIiRWMuVO9eBsk4UgETTILkjlZOlOnLmzDiTAM',
+        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$b3dVQUhOSVl0ZDhmLnFQSQ$hV6v1h94fijk/ZnIgBLAhz/EqGfzrMSJ6Txrko6rbFY',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
             'options' => [],
@@ -11,15 +11,17 @@ return [
     'DB' => [
         'Connections' => [
             'Default' => [
-                'charset' => 'utf8',
+                'charset' => 'utf8mb4',
+                'dbname' => 'test',
                 'driver' => 'mysqli',
-            ],
-        ],
-    ],
-    'EXTCONF' => [
-        'lang' => [
-            'availableLanguages' => [
-                'de',
+                'host' => 'db',
+                'password' => 'db',
+                'port' => 3306,
+                'tableoptions' => [
+                    'charset' => 'utf8mb4',
+                    'collate' => 'utf8mb4_unicode_ci',
+                ],
+                'user' => 'db',
             ],
         ],
     ],
@@ -42,7 +44,7 @@ return [
         'cacheHash' => [
             'enforceValidation' => true,
         ],
-        'debug' => false,
+        'debug' => true,
         'disableNoCacheParameter' => true,
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
@@ -62,7 +64,7 @@ return [
                     'writerConfiguration' => [
                         'notice' => [
                             'TYPO3\CMS\Core\Log\Writer\FileWriter' => [
-                                'disabled' => true,
+                                'disabled' => false,
                             ],
                         ],
                     ],
@@ -99,11 +101,14 @@ return [
                 ],
             ],
         ],
-        'devIPmask' => '',
-        'displayErrors' => 0,
-        'encryptionKey' => 'c6fb968a910516ec5cf06c4bdaefe4a066e20ea53beb858e019284150855a60fbe6d2bc84016672811ee34a3d30829dc',
-        'exceptionalErrors' => 4096,
-        'sitename' => 'TSV-Ladbergen',
+        'devIPmask' => '*',
+        'displayErrors' => 1,
+        'encryptionKey' => '2481b4ab291307e69cbcce3fdbcd48bc2772aa3f764427d263bf8c657ff61adda08766867379958838a8194872e6455b',
+        'exceptionalErrors' => 12290,
+        'features' => [
+            'frontend.cache.autoTagging' => true,
+        ],
+        'sitename' => 'New TYPO3 site',
         'systemMaintainers' => [
             1,
         ],
