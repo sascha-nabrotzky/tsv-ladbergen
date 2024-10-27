@@ -14,20 +14,20 @@
         text-transform: uppercase;
         letter-spacing: 3px;
         font-weight: 400;
+        text-align: center;
     }
 
     /* article container */
     .frame-type-shortcut {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 0.7rem;
 
         /* article */
         > div {
             position: relative;
             margin: 0;
-            border: 1px solid var(--color-black-50);
-            padding: 1rem;
+            background-color: var(--color-white);
+            padding: 1rem 1.5rem;
             max-height: 25rem;
             overflow: hidden;
 

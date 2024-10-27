@@ -250,3 +250,18 @@ div:has(iframe) {
     justify-content: center;
     padding-block: 2rem;
 }
+
+/* Text layout stylings */
+.frame-type-text.frame-layout-5 {
+    border-block: 2px solid white;
+    text-align: center;
+    padding-block: 3rem;
+
+    header > *:nth-child(1) {
+        color: var(--color-primary);
+    }
+
+    p {
+        font-size: var(--fs-xl);
+    }
+}
