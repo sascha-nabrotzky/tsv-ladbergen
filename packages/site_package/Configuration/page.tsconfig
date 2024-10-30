@@ -8,7 +8,7 @@ TCAdefaults.tt_content.space_after_class= small
 
 # Add new header layout
 TCEFORM.tt_content.header_layout {
-    addItems.6 = Layout
+    addItems.6 = Layout 6
 }
 
 # Add new layout
