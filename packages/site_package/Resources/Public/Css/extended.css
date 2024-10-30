@@ -20,7 +20,6 @@
     /* article container */
     .frame-type-shortcut {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
 
         /* article */
         > div {
@@ -60,15 +59,20 @@
             }
         }
     }
+}
 
-    @container extended (width <= 640px) {
-        > div {
-            grid-template-columns: repeat(2, 1fr);
-        }
+@container extended (width > 640px) {
+    .frame-type-shortcut {
+        grid-template-columns: repeat(3, 1fr);
     }
-    @container extended (width <= 500px) {
-        > div {
-            grid-template-columns: 1fr;
-        }
+}
+@container extended (width <= 640px) {
+    .frame-type-shortcut {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@container extended (width <= 500px) {
+    .frame-type-shortcut {
+        grid-template-columns: 1fr;
     }
 }
