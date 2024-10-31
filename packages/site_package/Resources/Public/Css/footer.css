@@ -20,18 +20,15 @@ footer {
         }
     }
 
-    div {
+    .sponsors {
         grid-column: 3 / 5;
 
         @media (width <= 640px) {
             grid-column: 2 / 4;
         }
-    }
 
-    .sponsors-title {
-        border-bottom: 1px solid var(--color-white);
-        margin-bottom: 1rem;
-        padding-bottom: 0.5rem;
-        font-weight: 400;
+        img {
+            width: 100%;
+        }
     }
 }
