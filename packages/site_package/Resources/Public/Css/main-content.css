@@ -1,7 +1,6 @@
 .main-content {
     display: grid;
     grid-template-columns: var(--grid-cols-lg);
-    background-color: var(--color-primary-25);
     padding-top: 5rem;
     padding-bottom: 6rem;
     row-gap: 4rem;

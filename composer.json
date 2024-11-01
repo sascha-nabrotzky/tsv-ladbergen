@@ -21,6 +21,7 @@
     ],
     "require": {
         "friendsoftypo3/content-blocks": "^0.8.2",
+        "georgringer/news": "^12.0",
         "tsv/site-package": "@dev",
         "typo3/cms-backend": "^13.4.0",
         "typo3/cms-belog": "^13.4.0",
