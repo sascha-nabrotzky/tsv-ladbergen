@@ -17,6 +17,7 @@
 
     @media (width <= 640px) {
         height: 80vh;
+        row-gap: 0;
     }
 
     &::after {
@@ -80,6 +81,10 @@
     z-index: 1;
     text-decoration: none;
     row-gap: 1rem;
+
+    @media (width <= 640px) {
+        margin-block: auto;
+    }
 
     svg {
         flex-shrink: 0;

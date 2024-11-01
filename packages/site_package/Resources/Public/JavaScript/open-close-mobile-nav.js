@@ -1,5 +1,5 @@
 const mobileNav = document.querySelector?.('.mobile-nav-wrapper');
-const mobileNavButton = document.querySelector?.('.mobile-nav-button');
+const mobileNavButton = document.querySelector?.('.mobile-nav-close-button');
 const menuIconOpen = document.querySelector?.('.menu-icon-open');
 const menuIconClose = document.querySelector?.('.menu-icon-close');
 

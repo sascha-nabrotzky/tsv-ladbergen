@@ -4,12 +4,11 @@ footer {
     margin-top: auto;
     background-color: var(--color-primary);
     color: var(--color-white);
-    padding-block: var(--p-y);
+    padding-block: 1rem;
     row-gap: 1rem;
 
     @media (width <= 640px) {
         grid-template-columns: var(--grid-cols-sm);
-        padding-block: var(--p-y) 7rem;
     }
 
     [data-layout='default'] & {

@@ -1,8 +1,23 @@
+<button type="button" class="mobile-nav-close-button">
+    <div class="menu-icon-open">
+        <f:cObject
+            typoscriptObjectPath="lib.inlineSvg"
+            data="{src:'EXT:site_package/Resources/Public/Icons/menu.svg'}"
+        />
+    </div>
+    <div class="menu-icon-close hidden hidden">
+        <f:cObject
+            typoscriptObjectPath="lib.inlineSvg"
+            data="{src:'EXT:site_package/Resources/Public/Icons/close.svg'}"
+        />
+    </div>
+</button>
+
 <nav class="mobile-nav-wrapper">
     <f:link.page pageUid="1">Startseite </f:link.page>
 
     <f:if condition="{clubNavigation}">
-        <div class="mobile-club-nav">
+        <div class="club-nav-links">
             <f:for each="{clubNavigation}" as="clubNavItem">
                 <li
                     class="nav-item {f:if(condition: clubNavItem.active, then: 'active')}"
@@ -21,7 +36,7 @@
     </f:if>
 
     <f:if condition="{mainNavigation}">
-        <div class="mobile-main-nav">
+        <div class="main-department-links">
             <f:for each="{mainNavigation}" as="mainNavItem">
                 <li
                     class="nav-item {f:if(condition: mainNavItem.active, then: 'active')}"
@@ -37,19 +52,11 @@
             </f:for>
         </div>
     </f:if>
-</nav>
 
-<button type="button" class="mobile-nav-button">
-    <div class="menu-icon-open">
+    <div class="tsv-logo">
         <f:cObject
             typoscriptObjectPath="lib.inlineSvg"
-            data="{src:'EXT:site_package/Resources/Public/Icons/menu.svg'}"
+            data="{src:'EXT:site_package/Resources/Public/Icons/TSV-Logo.svg'}"
         />
     </div>
-    <div class="menu-icon-close hidden hidden">
-        <f:cObject
-            typoscriptObjectPath="lib.inlineSvg"
-            data="{src:'EXT:site_package/Resources/Public/Icons/close.svg'}"
-        />
-    </div>
-</button>
+</nav>

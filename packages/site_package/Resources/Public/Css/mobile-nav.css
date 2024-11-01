@@ -3,12 +3,13 @@
     position: fixed;
     flex-direction: column;
     transform: translateX(calc(-100%));
+    transition: 300ms;
     z-index: 10;
     background-color: transparent;
     padding: 4rem 1rem 1rem;
+    overflow-y: auto;
     inset: 0;
     row-gap: 1rem;
-    transition: 300ms;
 
     @media (width >= 640px) {
         display: none;
@@ -32,7 +33,7 @@
     }
 }
 
-.mobile-nav-button {
+.mobile-nav-close-button {
     display: flex;
     position: fixed;
     top: 1rem;
@@ -41,11 +42,11 @@
     justify-content: center;
     z-index: 100;
     border: none;
-    background-color: var(--color-white-50);
+    background-color: var(--color-white-75);
     cursor: pointer;
     padding: 0.3rem;
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
 
     @media (width >= 640px) {
         display: none;
@@ -59,4 +60,18 @@
 
 .hidden {
     display: none;
+}
+
+.tsv-logo {
+    display: flex;
+    position: sticky;
+    right: 1rem;
+    bottom: 1rem;
+    justify-content: end;
+    color: var(--color-black);
+
+    svg {
+        width: 4rem;
+        height: 4rem;
+    }
 }

@@ -16,9 +16,9 @@ const toggleButtonVisibility = () => {
     if (scrollUpButton) {
         window.addEventListener('scroll', () => {
             if (window.scrollY > 500) {
-                scrollUpButton.classList.remove('hidden');
+                scrollUpButton.classList.remove('scroll-up-button--hidden');
             } else {
-                scrollUpButton.classList.add('hidden');
+                scrollUpButton.classList.add('scroll-up-button--hidden');
             }
         });
     }
