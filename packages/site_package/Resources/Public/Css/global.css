@@ -51,6 +51,11 @@
         var(--color-primary) 50%,
         transparent
     );
+    --color-primary-75: color-mix(
+        in srgb,
+        var(--color-primary) 75%,
+        transparent
+    );
     --color-secondary-25: color-mix(
         in srgb,
         var(--color-secondary) 25%,
@@ -255,9 +260,21 @@ div:has(iframe) {
     border-block: 2px solid white;
     text-align: center;
     padding-block: 3rem;
+    color: var(--color-white);
+    background-color: var(--color-primary-75);
 
     header > *:nth-child(1) {
-        color: var(--color-primary);
+        transform: skew(-2deg);
+        margin-bottom: 2rem;
+        box-shadow: 0px 10px 5px var(--color-black-25);
+        background-color: var(--color-spot);
+        padding-block: 0.5rem;
+        rotate: -2deg;
+    }
+
+    h2,
+    p {
+        padding-inline: 1rem;
     }
 
     p {
