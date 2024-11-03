@@ -21,7 +21,7 @@
 
     --fs-xs: 0.7rem;
     --fs-sm: 0.8rem; /* small */
-    --fs-base: 1rem; /* p */
+    --fs-base: 1.1rem; /* p 17.6 px*/
     --fs-lg: 1.25rem; /* h6 */
     --fs-xl: 1.563rem; /* h5 */
     --fs-2xl: 1.953rem; /* h4 */
@@ -36,6 +36,12 @@
     --grid-cols-lg: minmax(2rem, 1fr) [extended-start] 5rem minmax(0, 40rem)
         minmax(0, 20rem) [extended-end] 5rem minmax(2rem, 1fr);
 
+    --color-primary: #328f31;
+    --color-secondary: #236422;
+    --color-tertiary: #318f8c;
+    --color-spot: #8f3134;
+    --color-black: #222222;
+    --color-white: #f5f5f5;
     --color-black-25: color-mix(in srgb, var(--color-black) 25%, transparent);
     --color-black-50: color-mix(in srgb, var(--color-black) 50%, transparent);
     --color-white-25: color-mix(in srgb, var(--color-white) 25%, transparent);

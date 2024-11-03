@@ -12,10 +12,10 @@
         )
         no-repeat;
     padding: 3rem 1rem;
-    row-gap: 4rem;
+    row-gap: 2rem;
 
     @media (width <= 640px) {
-        height: 80vh;
+        height: 70vh;
         row-gap: 0;
     }
 
