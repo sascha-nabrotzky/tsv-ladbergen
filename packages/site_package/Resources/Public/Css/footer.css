@@ -2,7 +2,11 @@ footer {
     display: grid;
     grid-template-columns: var(--grid-cols-lg);
     margin-top: auto;
-    background-color: var(--color-primary);
+    background: linear-gradient(
+        to top,
+        var(--color-secondary) 10%,
+        var(--color-primary)
+    );
     color: var(--color-white);
     padding-block: 1rem;
     row-gap: 1rem;

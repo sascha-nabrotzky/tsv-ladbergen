@@ -263,11 +263,10 @@ div:has(iframe) {
 
 /* Text layout stylings */
 .frame-type-text.frame-layout-5 {
-    border-block: 4px solid var(--color-primary);
+    background-color: var(--color-primary);
     text-align: center;
-    padding-block: 3rem;
     color: var(--color-white);
-    background-color: var(--color-primary-75);
+    padding-block: 3rem;
 
     header > *:nth-child(1) {
         transform: skew(-2deg);
@@ -276,6 +275,7 @@ div:has(iframe) {
         background-color: var(--color-spot);
         padding-block: 0.5rem;
         rotate: -2deg;
+        translate: -1.5rem;
     }
 
     h2,
