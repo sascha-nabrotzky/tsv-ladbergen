@@ -1,0 +1,12 @@
+<nav aria-label="breadcrumb" class="breadcrumb">
+    <ol>
+        <f:for each="{breadcrumbMenu}" as="item" iteration="iterator">
+            <li class="breadcrumb-item">
+                <a href="{item.link}" title="{item.title}"> {item.title} </a>
+            </li>
+            <f:if condition="!{iterator.isLast}">
+                <span class="divider">></span>
+            </f:if>
+        </f:for>
+    </ol>
+</nav>

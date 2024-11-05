@@ -42,7 +42,8 @@
                 content: '';
             }
 
-            h3 {
+            h3,
+            h1 {
                 font-size: var(--fs-xl);
                 white-space: nowrap;
                 text-overflow: ellipsis;
@@ -56,6 +57,19 @@
             h4 {
                 margin-top: 0.3rem;
                 font-size: var(--fs-lg);
+            }
+
+            .teaser-text {
+                display: none;
+            }
+
+            .news-img-wrap {
+                margin: 0;
+                width: 100%;
+            }
+
+            img {
+                width: 100% !important;
             }
         }
     }

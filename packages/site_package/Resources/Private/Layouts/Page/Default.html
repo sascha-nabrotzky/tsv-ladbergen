@@ -1,11 +1,12 @@
 <f:render section="Pageheader" />
 
-<section class="main-content">
+<main class="main-content">
+    <f:render partial="Breadcrumb" arguments="{_all}" />
     <f:render partial="SubNavigation" arguments="{_all}" />
     <f:render section="Extended" />
     <f:render section="Main" />
     <f:render section="Sidebar" />
     <f:render partial="ScrollUpButton" arguments="{_all}" />
-</section>
+</main>
 
 <f:render section="Footer" />

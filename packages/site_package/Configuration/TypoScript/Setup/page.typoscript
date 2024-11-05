@@ -123,6 +123,12 @@ page.10 {
           as = clubNavigation
       }
 
+      45 = menu
+      45 {
+          as = breadcrumbMenu
+          special = rootline
+      }
+
       50 = database-query
       50 {
         table = tt_content

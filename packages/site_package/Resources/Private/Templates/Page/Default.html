@@ -70,7 +70,7 @@
 
 <f:section name="Main">
     <f:if condition="{mainContent}">
-        <main id="main">
+        <section class="main">
             <f:for each="{mainContent}" as="contentMainElement">
                 <f:cObject
                     typoscriptObjectPath="tt_content.{contentMainElement.data.CType}"
@@ -78,7 +78,7 @@
                     table="tt_content"
                 />
             </f:for>
-        </main>
+        </section>
     </f:if>
 </f:section>
 
