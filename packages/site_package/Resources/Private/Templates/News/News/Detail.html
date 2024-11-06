@@ -83,6 +83,10 @@
                     <!-- Link Back -->
                     <div class="news-backlink-wrap">
                         <f:link.page pageUid="{settings.backPid}">
+                            <f:cObject
+                                typoscriptObjectPath="lib.inlineSvg"
+                                data="{src:'EXT:site_package/Resources/Public/Icons/arrow-left-small.svg'}"
+                            />
                             <f:translate key="back-link" />
                         </f:link.page>
                     </div>

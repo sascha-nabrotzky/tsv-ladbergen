@@ -15,4 +15,12 @@
     a:hover {
         text-decoration: underline;
     }
+
+    .divider {
+        height: 0.6rem;
+
+        svg {
+            height: 100%;
+        }
+    }
 }

@@ -5,7 +5,12 @@
                 <a href="{item.link}" title="{item.title}"> {item.title} </a>
             </li>
             <f:if condition="!{iterator.isLast}">
-                <span class="divider">></span>
+                <span class="divider">
+                    <f:cObject
+                        typoscriptObjectPath="lib.inlineSvg"
+                        data="{src:'EXT:site_package/Resources/Public/Icons/angle-right-small.svg'}"
+                    />
+                </span>
             </f:if>
         </f:for>
     </ol>

@@ -2,5 +2,22 @@ plugin.tx_news {
   settings {
     displayDummyIfNoMedia = 0
   //   list.media.dummyImage = EXT:my_sitepackage/Resources/Public/Images/News/MyPreviewImage.png
+
+    list.media {
+      image {
+          // maxWidth = 300
+          // maxHeight = 300
+          width = 600
+          height = 
+       }
+    }
+
+    detail.media {
+      image {
+          maxWidth = 800
+          maxHeight =
+      }
+    }
   }
+
 }
