@@ -5,10 +5,8 @@ plugin.tx_news {
 
     list.media {
       image {
-          // maxWidth = 300
-          // maxHeight = 300
-          width = 600
-          height = 
+          maxWidth = 6300
+          maxHeight = 
        }
     }
 

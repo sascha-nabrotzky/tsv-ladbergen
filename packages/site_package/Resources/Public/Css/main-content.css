@@ -3,7 +3,7 @@
     grid-template-columns: var(--grid-cols-lg);
     padding-top: 5rem;
     padding-bottom: 6rem;
-    row-gap: 4rem;
+    row-gap: 2.5rem;
     background: repeating-linear-gradient(
                 -45deg,
                 var(--color-secondary),
