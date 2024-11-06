@@ -1,0 +1,7 @@
+plugin.tx_news {
+  view {
+      templateRootPath = EXT:site_package/Resources/Private/Templates/News/
+      partialRootPath = EXT:site_package/Resources/Private/Partials/News/
+      // layoutRootPath = EXT:site_package/Resources/Private/Layouts/News/
+  }
+} 

@@ -1,4 +1,6 @@
-plugin.tx_news.settings {
-  displayDummyIfNoMedia = 0
-//   list.media.dummyImage = EXT:my_sitepackage/Resources/Public/Images/News/MyPreviewImage.png
+plugin.tx_news {
+  settings {
+    displayDummyIfNoMedia = 0
+  //   list.media.dummyImage = EXT:my_sitepackage/Resources/Public/Images/News/MyPreviewImage.png
+  }
 }
