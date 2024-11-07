@@ -193,11 +193,6 @@ header:has(:is(h1, h2, h3, h4, h5, h6)) > :last-child:not(.mobile-nav-wrapper) {
 p {
     margin: 0.5rem 0;
     hyphens: auto;
-
-    &:has(time) {
-        color: var(--color-black-50);
-        margin-block: 1rem;
-    }
 }
 
 li {
@@ -267,6 +262,7 @@ div:has(iframe) {
     text-align: center;
     color: var(--color-white);
     padding-block: 3rem;
+    rotate: 1deg;
 
     header > *:nth-child(1) {
         transform: skew(-2deg);
@@ -286,4 +282,14 @@ div:has(iframe) {
     p {
         font-size: var(--fs-xl);
     }
+}
+
+.ce-headline-center {
+    text-align: center;
+}
+.ce-headline-right {
+    text-align: right;
+}
+.ce-headline-left {
+    text-align: left;
 }
