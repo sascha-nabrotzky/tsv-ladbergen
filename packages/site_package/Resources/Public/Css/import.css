@@ -11,4 +11,4 @@
 @import url('scroll-up-button.css');
 @import url('mobile-nav.css');
 @import url('breadcrumb.css');
-@import url('news.css');
+/* @import url('news.css'); imported with settings.cssFile = EXT:...*/

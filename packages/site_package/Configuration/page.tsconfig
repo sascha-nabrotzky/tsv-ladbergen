@@ -1,4 +1,5 @@
 @import 'EXT:site_package/Configuration/TsConfig/Page/PageLayout/*.tsconfig'
+@import 'EXT:site_package/Configuration/TsConfig/News/*.tsconfig'
 @import 'EXT:site_package/Configuration/TsConfig/Page/ContentElements/*.tsconfig'
 
 # Set default header layout to 3 (H3/H4)

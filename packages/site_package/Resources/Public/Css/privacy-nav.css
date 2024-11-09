@@ -7,4 +7,12 @@
     @media (width <= 640px) {
         grid-column: 2 / 4;
     }
+
+    a {
+        transition: color 300ms ease;
+
+        &:hover {
+            color: var(--color-white);
+        }
+    }
 }

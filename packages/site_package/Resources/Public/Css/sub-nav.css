@@ -11,15 +11,23 @@
     a {
         padding: 0.9rem 1.5rem;
         border: 1px solid var(--color-black);
+        background: linear-gradient(
+                to left,
+                transparent 50%,
+                var(--color-tertiary) 50%
+            )
+            right;
+        background-size: 200%;
+
+        &:hover {
+            background-position: left;
+            transition: 200ms ease-in-out;
+            color: var(--color-white);
+            border: 1px solid var(--color-secondary);
+        }
 
         @media (width <= 640px) {
             padding: 0.7rem 1.2rem;
-        }
-
-        &:hover {
-            border: 1px solid var(--color-primary);
-            color: var(--color-primary);
-            transition: color 300ms ease;
         }
 
         &.active {
