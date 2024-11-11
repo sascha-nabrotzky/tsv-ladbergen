@@ -3,7 +3,18 @@
 <f:section name="Pageheader">
     <header class="pageheader">
         <div class="bg-image-wrapper">
-            <f:cObject typoscriptObjectPath="lib.headerImage" />
+            <f:if condition="{data.media}">
+                <f:then>
+                    <f:cObject typoscriptObjectPath="lib.headerImage" />
+                </f:then>
+                <f:else>
+                    <f:image
+                        src="EXT:site_package/Resources/Public/Images/Default_Bg_Img.webp"
+                        crop="header"
+                        alt="alt text"
+                    />
+                </f:else>
+            </f:if>
         </div>
 
         <f:render partial="ClubNavigation" arguments="{_all}" />
