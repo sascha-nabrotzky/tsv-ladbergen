@@ -1,5 +1,8 @@
 <f:if condition="{privacyNavigation}">
     <nav class="privacy-nav">
+        <span class="copyright">
+            <f:cObject typoscriptObjectPath="lib.copyright" />
+        </span>
         <f:for each="{privacyNavigation}" as="privacyNavItem">
             <li
                 class="nav-item {f:if(condition: privacyNavItem.active, then: 'active')}"

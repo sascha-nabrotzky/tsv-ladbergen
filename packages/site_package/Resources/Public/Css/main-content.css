@@ -1,4 +1,4 @@
-.main-content {
+.main-content-wrap {
     display: grid;
     grid-template-columns: var(--grid-cols-lg);
     padding-top: 5rem;
@@ -29,7 +29,7 @@
     }
 
     [data-layout='startseite'] & {
-        main {
+        .main {
             grid-column: 3 / 5;
 
             @media (width <= 640px) {
@@ -47,7 +47,7 @@
         }
 
         .main {
-            grid-column: 3 / 5;
+            grid-column: 3 / 4;
 
             @media (width <= 768px) {
                 grid-column: 3 / 5;

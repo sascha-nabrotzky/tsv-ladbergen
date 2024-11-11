@@ -11,7 +11,7 @@
                     <f:image
                         src="EXT:site_package/Resources/Public/Images/Default_Bg_Img.webp"
                         crop="header"
-                        alt="alt text"
+                        alt="Hintergrundbild mit TSV-Logo"
                     />
                 </f:else>
             </f:if>
@@ -45,7 +45,7 @@
 
 <f:section name="Main">
     <f:if condition="{mainContent}">
-        <main id="main">
+        <main class="main">
             <f:for each="{mainContent}" as="contentMainElement">
                 <f:cObject
                     typoscriptObjectPath="tt_content.{contentMainElement.data.CType}"

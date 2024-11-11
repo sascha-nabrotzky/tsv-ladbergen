@@ -34,4 +34,8 @@ footer {
             width: 100%;
         }
     }
+
+    .copyright {
+        color: var(--color-white-75);
+    }
 }
