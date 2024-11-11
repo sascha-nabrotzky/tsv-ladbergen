@@ -1,4 +1,8 @@
-<button type="button" class="mobile-nav-close-button">
+<button
+    type="button"
+    class="mobile-nav-close-button"
+    aria-label="close mobile navigation"
+>
     <div class="menu-icon-open">
         <f:cObject
             typoscriptObjectPath="lib.inlineSvg"
@@ -15,7 +19,7 @@
 
 <nav class="mobile-nav-wrapper">
     <f:if condition="{clubNavigation}">
-        <div class="club-nav-links">
+        <menu class="club-nav-links">
             <f:for each="{clubNavigation}" as="clubNavItem">
                 <li
                     class="nav-item {f:if(condition: clubNavItem.active, then: 'active')}"
@@ -30,11 +34,11 @@
                     </a>
                 </li>
             </f:for>
-        </div>
+        </menu>
     </f:if>
 
     <f:if condition="{mainNavigation}">
-        <div class="main-department-links">
+        <menu class="main-department-links">
             <f:for each="{mainNavigation}" as="mainNavItem">
                 <li
                     class="nav-item {f:if(condition: mainNavItem.active, then: 'active')}"
@@ -48,7 +52,7 @@
                     </a>
                 </li>
             </f:for>
-        </div>
+        </menu>
     </f:if>
 
     <div class="tsv-logo">
