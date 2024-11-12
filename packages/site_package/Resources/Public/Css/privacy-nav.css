@@ -1,8 +1,15 @@
 .privacy-nav {
-    display: flex;
     grid-column: 3 / 5;
+    display: flex;
     column-gap: 2rem;
-    color: var(--color-white-75);
+    flex-wrap: wrap;
+    row-gap: 1rem;
+
+    menu {
+        display: flex;
+        column-gap: 2rem;
+        color: var(--color-white-75);
+    }
 
     @media (width <= 640px) {
         grid-column: 2 / 4;

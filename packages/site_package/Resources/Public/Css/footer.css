@@ -37,5 +37,6 @@ footer {
 
     .copyright {
         color: var(--color-white-75);
+        white-space: nowrap;
     }
 }

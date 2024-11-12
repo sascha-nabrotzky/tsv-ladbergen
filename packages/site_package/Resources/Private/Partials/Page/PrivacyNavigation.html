@@ -3,19 +3,21 @@
         <span class="copyright">
             <f:cObject typoscriptObjectPath="lib.copyright" />
         </span>
-        <f:for each="{privacyNavigation}" as="privacyNavItem">
-            <li
-                class="nav-item {f:if(condition: privacyNavItem.active, then: 'active')}"
-            >
-                <a
-                    class="nav-link"
-                    href="{privacyNavItem.link}"
-                    target="{privacyNavItem.target}"
-                    title="{privacyNavItem.title}"
+        <menu>
+            <f:for each="{privacyNavigation}" as="privacyNavItem">
+                <li
+                    class="nav-item {f:if(condition: privacyNavItem.active, then: 'active')}"
                 >
-                    {privacyNavItem.title}
-                </a>
-            </li>
-        </f:for>
+                    <a
+                        class="nav-link"
+                        href="{privacyNavItem.link}"
+                        target="{privacyNavItem.target}"
+                        title="{privacyNavItem.title}"
+                    >
+                        {privacyNavItem.title}
+                    </a>
+                </li>
+            </f:for>
+        </menu>
     </nav>
 </f:if>
