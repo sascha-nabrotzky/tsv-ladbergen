@@ -18,6 +18,10 @@
     .news-list-view {
         > .article {
             margin-bottom: 2rem;
+
+            @media (width < 390px) {
+                margin-bottom: 1rem;
+            }
         }
     }
 

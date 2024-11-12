@@ -199,7 +199,11 @@ li {
     list-style-type: none;
 }
 
-/* Links */
+/* Navigation */
+menu {
+    padding: 0;
+}
+
 nav {
     a {
         text-decoration: none;
@@ -263,6 +267,7 @@ div:has(iframe) {
     color: var(--color-white);
     padding-block: 3rem;
     rotate: 1deg;
+    border-radius: 4px;
 
     header > *:nth-child(1) {
         transform: skew(-2deg);

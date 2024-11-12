@@ -1,6 +1,6 @@
 plugin.tx_news {
   settings {
-    cssFile = EXT:site_package/Resources/Public/Css/news.css
+    cssFile = EXT:site_package/Resources/Public/Css/news-output.css
     displayDummyIfNoMedia = 0
   //   list.media.dummyImage = EXT:my_sitepackage/Resources/Public/Images/News/MyPreviewImage.png
 

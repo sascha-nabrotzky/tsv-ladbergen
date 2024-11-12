@@ -314,7 +314,10 @@ p {
 li {
     list-style-type: none;
 }
-/* Links */
+/* Navigation */
+menu {
+    padding: 0;
+}
 nav a {
         -webkit-text-decoration: none;
         text-decoration: none;
@@ -375,6 +378,7 @@ div:has(iframe) {
     padding-top: 3rem;
     padding-bottom: 3rem;
     rotate: 1deg;
+    border-radius: 4px;
 }
 .frame-type-text.frame-layout-5 header > *:nth-child(1) {
         transform: skew(-2deg);
@@ -408,13 +412,7 @@ div:has(iframe) {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(
-            to bottom,
-            var(--color-primary),
-            transparent,
-            var(--color-black)
-        )
-        no-repeat;
+    background-color: var(--color-primary);
     padding: 3rem 1rem;
     row-gap: 2rem;
 }
@@ -954,10 +952,8 @@ footer .copyright {
     align-items: center;
     justify-content: center;
     z-index: 100;
-    outline: 1px solid var(--color-white-50);
-    outline-offset: 1px;
-    border: 2px solid var(--color-black);
-    background-color: transparent;
+    border: none;
+    background-color: var(--color-white);
     cursor: pointer;
     padding: 0.3rem;
     width: 2.5rem;
@@ -973,10 +969,6 @@ footer .copyright {
         vertical-align: middle;
         color: var(--color-black);
     }
-.mobile-nav-close-button svg rect {
-            outline: 1px solid var(--color-white-50);
-            outline-offset: 1px;
-        }
 .hidden {
     display: none;
 }
