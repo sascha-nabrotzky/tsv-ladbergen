@@ -1,13 +1,12 @@
-<cb:asset.css
+<f:asset.css
     identifier="content-block-css-tsv-tsv/contact-person"
-    file="Frontend.css"
+    href="{cb:assetPath()}/frontend.css"
 />
-<cb:asset.script
+<f:asset.script
     identifier="content-block-js-tsv-tsv/contact-person"
-    file="Frontend.js"
+    src="{cb:assetPath()}/frontend.js"
 />
 
-<!-- Daten kommen aus processed -->
 <f:if condition="{data.header}">
     <h6 class="contact-person-headline">{data.header}</h6>
 </f:if>
