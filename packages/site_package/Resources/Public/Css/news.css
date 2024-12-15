@@ -76,7 +76,7 @@
             }
 
             svg {
-                width: 1rem;
+                width: 0.8rem;
             }
         }
 
@@ -86,11 +86,20 @@
             padding: 0;
             width: 100%;
 
+            .outer {
+                margin-block: 1rem;
+            }
+
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
+        }
+
+        .teaser-text {
+            margin-block: 1rem;
+            font-weight: 700;
         }
     }
 }

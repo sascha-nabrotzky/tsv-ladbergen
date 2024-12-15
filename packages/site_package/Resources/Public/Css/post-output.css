@@ -162,6 +162,7 @@ summary {
     --color-white: #f5f5f5;
     --color-black-25: color-mix(in srgb, var(--color-black) 25%, transparent);
     --color-black-50: color-mix(in srgb, var(--color-black) 50%, transparent);
+    --color-black-75: color-mix(in srgb, var(--color-black) 75%, transparent);
     --color-white-25: color-mix(in srgb, var(--color-white) 25%, transparent);
     --color-white-50: color-mix(in srgb, var(--color-white) 50%, transparent);
     --color-white-75: color-mix(in srgb, var(--color-white) 75%, transparent);
@@ -211,9 +212,6 @@ h6 {
     margin-top: 0;
     margin-bottom: 0.5rem;
     word-break: break-word;
-    -webkit-hyphens: auto;
-            hyphens: auto;
-    text-wrap: balance;
 }
 h1 {
     font-size: var(--fs-5xl);
