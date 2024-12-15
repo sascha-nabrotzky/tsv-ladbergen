@@ -298,3 +298,7 @@ div:has(iframe) {
 .ce-headline-left {
     text-align: left;
 }
+
+.frame-ruler-after {
+    border-bottom: 1px solid var(--color-black-25);
+}
