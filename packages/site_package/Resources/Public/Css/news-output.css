@@ -1,21 +1,27 @@
 
     /* List and Detail */
-.news .article .footer,.news .news-single .footer {
-            color: var(--color-black-50);
+.news .article .header,.news .news-single .header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
         }
-.news .article .footer span:not(:last-of-type)::after {
-                    content: '|';
-                    margin-left: 0.25rem;
-                    margin-right: 0.25rem;
-                }
-.news .news-single .footer span:not(:last-of-type)::after {
-                    content: '|';
-                    margin-left: 0.25rem;
-                    margin-right: 0.25rem;
+.news .article .header .creation-info,.news .news-single .header .creation-info {
+                align-self: start;
+                background-color: var(--color-black-10);
+                color: var(--color-black);
+                padding-left: 1rem;
+                padding-right: 1rem;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                border-radius: 0 0 1rem 1rem;
+            }
+.news .article .header .creation-info p,.news .news-single .header .creation-info p {
+                    margin-top: 0;
+                    margin-bottom: 0;
                 }
 /* List view */
 .news .news-list-view  > .article {
-            margin-bottom: 2rem;
+            margin-bottom: 6rem;
         }
 @media (max-width: 389.98px) {
             .news .news-list-view  > .article {
@@ -40,6 +46,7 @@
             -webkit-text-decoration: none;
             text-decoration: none;
             font-weight: 700;
+            margin-top: 0.5rem;
         }
 .news .article .more:hover {
                 -webkit-text-decoration: underline;

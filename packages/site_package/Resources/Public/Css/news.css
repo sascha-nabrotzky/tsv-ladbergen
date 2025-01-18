@@ -2,13 +2,21 @@
     /* List and Detail */
     .article,
     .news-single {
-        .footer {
-            color: var(--color-black-50);
+        .header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
 
-            span {
-                &:not(:last-of-type)::after {
-                    content: '|';
-                    margin-inline: 0.25rem;
+            .creation-info {
+                align-self: start;
+                background-color: var(--color-black-10);
+                color: var(--color-black);
+                padding-inline: 1rem;
+                padding-block: 0.5rem;
+                border-radius: 0 0 1rem 1rem;
+
+                p {
+                    margin-block: 0;
                 }
             }
         }
@@ -17,7 +25,7 @@
     /* List view */
     .news-list-view {
         > .article {
-            margin-bottom: 2rem;
+            margin-bottom: 6rem;
 
             @media (width < 390px) {
                 margin-bottom: 1rem;
@@ -48,6 +56,7 @@
             column-gap: 0.5rem;
             text-decoration: none;
             font-weight: 700;
+            margin-top: 0.5rem;
 
             &:hover {
                 text-decoration: underline;

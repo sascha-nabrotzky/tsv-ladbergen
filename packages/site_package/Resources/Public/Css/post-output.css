@@ -160,6 +160,7 @@ summary {
     --color-spot: #8f3134;
     --color-black: #222222;
     --color-white: #f5f5f5;
+    --color-black-10: color-mix(in srgb, var(--color-black) 10%, transparent);
     --color-black-25: color-mix(in srgb, var(--color-black) 25%, transparent);
     --color-black-50: color-mix(in srgb, var(--color-black) 50%, transparent);
     --color-black-75: color-mix(in srgb, var(--color-black) 75%, transparent);
@@ -191,6 +192,11 @@ summary {
         var(--color-secondary) 50%,
         transparent
     );
+    --color-secondary-75: color-mix(
+        in srgb,
+        var(--color-secondary) 50%,
+        transparent
+    );
     --color-tertiary-25: color-mix(
         in srgb,
         var(--color-tertiary) 25%,
@@ -201,6 +207,14 @@ summary {
         var(--color-tertiary) 50%,
         transparent
     );
+    --color-tertiary-75: color-mix(
+        in srgb,
+        var(--color-tertiary) 50%,
+        transparent
+    );
+    --color-spot-25: color-mix(in srgb, var(--color-spot) 25%, transparent);
+    --color-spot-50: color-mix(in srgb, var(--color-spot) 50%, transparent);
+    --color-spot-75: color-mix(in srgb, var(--color-spot) 75%, transparent);
 }
 /* Headlines */
 h1,
@@ -395,6 +409,15 @@ div:has(iframe) {
     }
 .frame-type-text.frame-layout-5 p {
         font-size: var(--fs-xl);
+    }
+.frame-category-headline header {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-black-25);
+}
+.frame-category-headline header  > * {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 400;
     }
 .ce-headline-center {
     text-align: center;
@@ -615,24 +638,19 @@ div:has(iframe) {
         grid-column: 2 / 4;
 }
     }
-.extended header {
-        margin-bottom: 1.5rem;
-        border-bottom: 1px solid var(--color-black-25);
-    }
-.extended header > * {
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-size: var(--fs-lg);
-            font-weight: 400;
-        }
 .extended .news-list-view {
         display: grid;
         grid-gap: 2rem;
         gap: 2rem;
     }
-.extended .news-list-view .header > * {
-                font-size: var(--fs-xl);
-            }
+.extended .news-list-view .header div.creation-info {
+            transform: translateY(-1rem);
+            background-color: var(--color-white);
+            color: var(--color-black-75);
+        }
+.extended .news-list-view .headline {
+            font-size: var(--fs-xl);
+        }
 .extended .article {
         display: flex;
         flex-direction: column;
