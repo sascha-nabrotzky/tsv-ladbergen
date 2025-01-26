@@ -8,15 +8,16 @@
         }
 .news .article .header .headline,.news .news-single .header .headline {
                 padding-top: 1rem;
+                padding-right: 0.5rem;
             }
 .news .article .header .creation-info,.news .news-single .header .creation-info {
                 align-self: start;
                 background-color: var(--color-black-10);
                 color: var(--color-black);
-                padding-left: 1rem;
-                padding-right: 1rem;
-                padding-top: 0.5rem;
-                padding-bottom: 0.5rem;
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+                padding-top: 0.25rem;
+                padding-bottom: 0.25rem;
                 border-radius: 0 0 1rem 1rem;
             }
 .news .article .header .creation-info p,.news .news-single .header .creation-info p {

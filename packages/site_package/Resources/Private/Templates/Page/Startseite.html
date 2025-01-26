@@ -31,7 +31,7 @@
 
 <f:section name="Extended">
     <f:if condition="{extendedContent}">
-        <div class="extended">
+        <div class="extended" role="complementary">
             <f:for each="{extendedContent}" as="contentExtendedElement">
                 <f:cObject
                     typoscriptObjectPath="tt_content.{contentExtendedElement.data.CType}"

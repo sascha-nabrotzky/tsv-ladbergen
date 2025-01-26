@@ -655,12 +655,17 @@ div:has(iframe) {
             font-size: var(--fs-xl);
             padding-top: 0 !important;
             padding-top: initial !important;
+            padding-right: 0 !important;
+            padding-right: initial !important;
         }
 .extended .article {
         display: flex;
         flex-direction: column;
         border-radius: 4px;
-        background-color: var(--color-primary);
+        background-image: linear-gradient(
+            var(--color-primary),
+            var(--color-secondary)
+        );
         padding: 1rem;
         color: var(--color-white);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);

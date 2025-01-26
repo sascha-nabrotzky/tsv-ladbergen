@@ -2,6 +2,8 @@
     type="button"
     class="mobile-nav-close-button"
     aria-label="close mobile navigation"
+    aria-hidden="true"
+    tabindex="-1"
 >
     <div class="menu-icon-open">
         <f:cObject
@@ -17,7 +19,7 @@
     </div>
 </button>
 
-<nav class="mobile-nav-wrapper">
+<nav class="mobile-nav-wrapper" aria-hidden="true">
     <f:if condition="{clubNavigation}">
         <menu class="club-nav-links">
             <f:for each="{clubNavigation}" as="clubNavItem">
@@ -29,6 +31,7 @@
                         href="{clubNavItem.link}"
                         target="{clubNavItem.target}"
                         title="{clubNavItem.title}"
+                        tabindex="-1"
                     >
                         {clubNavItem.title}
                     </a>
@@ -47,6 +50,7 @@
                         href="{mainNavItem.link}"
                         target="{mainNavItem.target}"
                         title="{mainNavItem.title}"
+                        tabindex="-1"
                     >
                         {mainNavItem.title}
                     </a>
