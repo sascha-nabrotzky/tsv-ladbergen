@@ -11,14 +11,19 @@
         display: grid;
         gap: 2rem;
 
-        .header div.creation-info {
-            transform: translateY(-1rem);
-            background-color: var(--color-white);
-            color: var(--color-black-75);
+        .header {
+            border-top: none !important;
+
+            div.creation-info {
+                transform: translateY(-1rem);
+                background-color: var(--color-white);
+                color: var(--color-black-75);
+            }
         }
 
         .headline {
             font-size: var(--fs-xl);
+            padding-top: unset !important;
         }
     }
 

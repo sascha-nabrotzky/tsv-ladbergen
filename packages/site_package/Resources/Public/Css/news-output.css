@@ -4,7 +4,11 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 1rem;
+            border-top: 1px solid var(--color-black-25);
         }
+.news .article .header .headline,.news .news-single .header .headline {
+                padding-top: 1rem;
+            }
 .news .article .header .creation-info,.news .news-single .header .creation-info {
                 align-self: start;
                 background-color: var(--color-black-10);
@@ -23,7 +27,7 @@
 .news .news-list-view  > .article {
             margin-bottom: 6rem;
         }
-@media (max-width: 389.98px) {
+@media (max-width: 390.98px) {
             .news .news-list-view  > .article {
                 margin-bottom: 1rem;
         }

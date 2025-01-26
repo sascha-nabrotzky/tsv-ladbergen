@@ -6,6 +6,11 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 1rem;
+            border-top: 1px solid var(--color-black-25);
+
+            .headline {
+                padding-top: 1rem;
+            }
 
             .creation-info {
                 align-self: start;
@@ -27,7 +32,7 @@
         > .article {
             margin-bottom: 6rem;
 
-            @media (width < 390px) {
+            @media (width < 391px) {
                 margin-bottom: 1rem;
             }
         }

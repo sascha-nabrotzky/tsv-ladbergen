@@ -643,13 +643,18 @@ div:has(iframe) {
         grid-gap: 2rem;
         gap: 2rem;
     }
-.extended .news-list-view .header div.creation-info {
-            transform: translateY(-1rem);
-            background-color: var(--color-white);
-            color: var(--color-black-75);
+.extended .news-list-view .header {
+            border-top: none !important;
         }
+.extended .news-list-view .header div.creation-info {
+                transform: translateY(-1rem);
+                background-color: var(--color-white);
+                color: var(--color-black-75);
+            }
 .extended .news-list-view .headline {
             font-size: var(--fs-xl);
+            padding-top: 0 !important;
+            padding-top: initial !important;
         }
 .extended .article {
         display: flex;
