@@ -1,5 +1,5 @@
 <f:if condition="{subNavigation}">
-    <nav class="sub-nav">
+    <nav class="sub-nav" aria-label="sub navigation">
         <f:for each="{subNavigation}" as="subNavItem">
             <a
                 class="nav-link {f:if(condition: subNavItem.active, then: 'active')}"
