@@ -1,9 +1,8 @@
 <button
     type="button"
-    class="mobile-nav-close-button"
-    aria-label="close mobile navigation"
-    aria-hidden="true"
-    tabindex="-1"
+    class="mobile-nav-toggle-button"
+    aria-label="toggle mobile navigation"
+    aria-expanded="false"
 >
     <div class="menu-icon-open">
         <f:cObject
@@ -11,7 +10,7 @@
             data="{src:'EXT:site_package/Resources/Public/Icons/menu.svg'}"
         />
     </div>
-    <div class="menu-icon-close hidden hidden">
+    <div class="menu-icon-close hidden">
         <f:cObject
             typoscriptObjectPath="lib.inlineSvg"
             data="{src:'EXT:site_package/Resources/Public/Icons/close.svg'}"
@@ -19,7 +18,7 @@
     </div>
 </button>
 
-<nav class="mobile-nav-wrapper" aria-hidden="true">
+<nav class="mobile-nav-wrapper" inert="">
     <f:if condition="{clubNavigation}">
         <menu class="club-nav-links">
             <h6 class="mobile-nav-headline">Verein</h6>
@@ -32,7 +31,6 @@
                         href="{clubNavItem.link}"
                         target="{clubNavItem.target}"
                         title="{clubNavItem.title}"
-                        tabindex="-1"
                     >
                         {clubNavItem.title}
                     </a>
@@ -52,7 +50,6 @@
                         href="{mainNavItem.link}"
                         target="{mainNavItem.target}"
                         title="{mainNavItem.title}"
-                        tabindex="-1"
                     >
                         {mainNavItem.title}
                     </a>
