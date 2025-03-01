@@ -1,16 +1,16 @@
 
     /* List and Detail */
-.news .article .header,.news .news-single .header {
+.news .article:not(.does-not-exist) .header,.news.news-single .article .header {
             display: flex;
             justify-content: space-between;
             margin-bottom: 1rem;
             border-top: 1px solid var(--color-black-25);
         }
-.news .article .header .headline,.news .news-single .header .headline {
+.news .article:not(.does-not-exist) .header .headline,.news.news-single .article .header .headline {
                 padding-top: 1rem;
                 padding-right: 0.5rem;
             }
-.news .article .header .creation-info,.news .news-single .header .creation-info {
+.news .article:not(.does-not-exist) .header .creation-info,.news.news-single .article .header .creation-info {
                 align-self: start;
                 background-color: var(--color-black-10);
                 color: var(--color-black);
@@ -20,7 +20,7 @@
                 padding-bottom: 0.25rem;
                 border-radius: 0 0 1rem 1rem;
             }
-.news .article .header .creation-info p,.news .news-single .header .creation-info p {
+.news .article:not(.does-not-exist) .header .creation-info p,.news.news-single .article .header .creation-info p {
                     margin-top: 0;
                     margin-bottom: 0;
                 }

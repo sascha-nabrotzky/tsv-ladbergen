@@ -16,7 +16,7 @@
 
             div.creation-info {
                 transform: translateY(-1rem);
-                background-color: var(--color-white);
+                background-color: var(--color-white) !important;
                 color: var(--color-black-75);
             }
         }

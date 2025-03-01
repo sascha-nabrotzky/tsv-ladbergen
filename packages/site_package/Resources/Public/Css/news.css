@@ -1,7 +1,7 @@
 .news {
     /* List and Detail */
     .article,
-    .news-single {
+    &.news-single .article {
         .header {
             display: flex;
             justify-content: space-between;
