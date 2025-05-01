@@ -42,11 +42,11 @@
             </f:if>
         </f:for>
         <f:for each="{clubNavigation}" as="clubNavItem">
-            <f:if condition="{clubNavItem.active}">
+            <f:if condition="{clubNavItem.current}">
                 <h1>
                     {clubNavItem.title}
                     <f:for each="{subNavigation}" as="subNavItem">
-                        <f:if condition="{subNavItem.active}">
+                        <f:if condition="{subNavItem.current}">
                             <span class="subnav-title">
                                 | {subNavItem.title}</span
                             >
