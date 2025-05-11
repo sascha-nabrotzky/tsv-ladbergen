@@ -849,10 +849,16 @@ footer .copyright {
 }
 .privacy-nav menu {
         display: flex;
+        flex: auto;
+        flex-wrap: wrap;
         -moz-column-gap: 2rem;
              column-gap: 2rem;
+        row-gap: 1rem;
         color: var(--color-white-75);
     }
+.privacy-nav menu li:last-of-type {
+            margin-left: auto;
+        }
 @media (max-width: 640px) {
 .privacy-nav {
         grid-column: 2 / 4;
