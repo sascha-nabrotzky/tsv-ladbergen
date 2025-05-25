@@ -40,19 +40,11 @@
     }
 
     .article {
-        .header {
-            a {
-                text-decoration: none;
-            }
-        }
-
         .news-img-wrap {
-            a {
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
         }
 
