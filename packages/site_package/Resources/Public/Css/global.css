@@ -97,6 +97,7 @@
     --color-spot-25: color-mix(in srgb, var(--color-spot) 25%, transparent);
     --color-spot-50: color-mix(in srgb, var(--color-spot) 50%, transparent);
     --color-spot-75: color-mix(in srgb, var(--color-spot) 75%, transparent);
+    --color-focus: rgb(255, 167, 0) /* Orange 500 */;
 }
 
 /* Headlines */
@@ -210,6 +211,11 @@ p {
 
 li {
     list-style-type: none;
+}
+
+:focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
 }
 
 /* Navigation */

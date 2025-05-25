@@ -2,7 +2,9 @@
     <ol>
         <f:for each="{breadcrumbMenu}" as="item" iteration="iterator">
             <li class="breadcrumb-item">
-                <a href="{item.link}" title="{item.title}"> {item.title} </a>
+                <a href="{item.link}" title="Zurück zur Seite '{item.title}'">
+                    {item.title}
+                </a>
             </li>
             <f:if condition="!{iterator.isLast}">
                 <span class="divider">
