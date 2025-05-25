@@ -47,7 +47,7 @@
             -webkit-text-decoration: none;
             text-decoration: none;
             font-weight: 700;
-            margin-top: 0.5rem;
+            margin-top: auto;
         }
 .news .article .more:hover {
                 -webkit-text-decoration: underline;

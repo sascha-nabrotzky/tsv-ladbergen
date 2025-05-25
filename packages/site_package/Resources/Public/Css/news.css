@@ -54,7 +54,7 @@
             column-gap: 0.5rem;
             text-decoration: none;
             font-weight: 700;
-            margin-top: 0.5rem;
+            margin-top: auto;
 
             &:hover {
                 text-decoration: underline;
