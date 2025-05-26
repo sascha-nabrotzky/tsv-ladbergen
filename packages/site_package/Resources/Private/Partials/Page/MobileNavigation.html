@@ -23,7 +23,7 @@
             <h6 class="mobile-nav-headline">Verein</h6>
             <f:for each="{clubNavigation}" as="clubNavItem">
                 <li
-                    class="nav-item {f:if(condition: clubNavItem.active, then: 'active')}"
+                    class="nav-item {f:if(condition: clubNavItem.current, then: 'active')}"
                 >
                     <a
                         class="nav-link"
@@ -43,7 +43,7 @@
             <h6 class="mobile-nav-headline">Abteilungen</h6>
             <f:for each="{mainNavigation}" as="mainNavItem">
                 <li
-                    class="nav-item {f:if(condition: mainNavItem.active, then: 'active')}"
+                    class="nav-item {f:if(condition: mainNavItem.current, then: 'active')}"
                 >
                     <a
                         href="{mainNavItem.link}"

@@ -5,7 +5,7 @@
                 href="{mainNavItem.link}"
                 target="{mainNavItem.target}"
                 title="Zur Abteilungsseite '{mainNavItem.title}'"
-                class="nav-item {f:if(condition: mainNavItem.active, then: 'active')}"
+                class="nav-item {f:if(condition: mainNavItem.current, then: 'active')}"
             >
                 <div class="img-wrapper">
                     <f:if condition="{mainNavItem.files}">

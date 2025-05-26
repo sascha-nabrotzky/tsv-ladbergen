@@ -2,7 +2,7 @@
     <nav class="club-nav" aria-label="club navigation">
         <f:for each="{clubNavigation}" as="clubNavItem">
             <a
-                class="nav-link {f:if(condition: clubNavItem.active, then: 'active')}"
+                class="nav-link {f:if(condition: clubNavItem.current, then: 'active')}"
                 href="{clubNavItem.link}"
                 target="{clubNavItem.target}"
                 title="Zur Vereinsseite '{clubNavItem.title}'"
