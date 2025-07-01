@@ -1,7 +1,8 @@
 <button
     class="mobile-nav-toggle-button"
-    aria-label="Öffnen/Schließen der mobilen Navigation"
+    aria-label="Mobile Navigation"
     aria-expanded="false"
+    aria-controls="mobile-nav"
 >
     <div class="menu-icon-open">
         <f:cObject
@@ -17,7 +18,7 @@
     </div>
 </button>
 
-<nav class="mobile-nav-wrapper" inert="">
+<nav id="mobile-nav" class="mobile-nav-wrapper" inert="">
     <f:if condition="{clubNavigation}">
         <menu class="club-nav-links">
             <h6 class="mobile-nav-headline">Verein</h6>

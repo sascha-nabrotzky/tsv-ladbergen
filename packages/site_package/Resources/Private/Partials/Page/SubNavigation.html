@@ -1,5 +1,8 @@
 <f:if condition="{subNavigation}">
-    <nav class="sub-nav" aria-label="sub navigation">
+    <nav
+        class="sub-nav"
+        aria-label="Unternavigation der Abteilung '{subNavItem.title}'"
+    >
         <f:for each="{subNavigation}" as="subNavItem">
             <a
                 class="nav-link {f:if(condition: subNavItem.active, then: 'active')}"
