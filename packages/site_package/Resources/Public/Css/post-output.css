@@ -875,6 +875,16 @@ footer .copyright {
 .privacy-nav a:hover {
             color: var(--color-white);
         }
+.skip-to-main {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    transition: opacity 300ms ease-in;
+    opacity: 0;
+}
+.skip-to-main:focus-visible {
+        opacity: 1;
+    }
 .club-nav {
     display: flex;
     flex-wrap: wrap;
