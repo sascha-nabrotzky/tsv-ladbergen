@@ -333,3 +333,7 @@ div:has(iframe) {
 .frame-ruler-after {
     border-bottom: 1px solid var(--color-black-25);
 }
+
+.frame-full-width {
+    width: 100%;
+}

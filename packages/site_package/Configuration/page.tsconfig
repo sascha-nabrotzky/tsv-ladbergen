@@ -22,5 +22,6 @@ TCEFORM.tt_content.frame_class {
    removeItems = ruler-before,ruler-after,indent,indent-left,indent-right,none
    addItems {
       category-headline = Kategorie Überschrift
+      full-width = Vollbreite
    }
 }
