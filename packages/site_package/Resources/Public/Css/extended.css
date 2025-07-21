@@ -1,7 +1,9 @@
 .extended {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / 6;
     container-name: extended;
     container-type: inline-size;
-    grid-column: 2 / 6;
 
     @media (width <= 640px) {
         grid-column: 2 / 4;

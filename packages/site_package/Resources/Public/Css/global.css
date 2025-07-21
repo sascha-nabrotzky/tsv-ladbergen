@@ -209,7 +209,11 @@ p {
     hyphens: auto;
 }
 
-li {
+li:not(nav li) {
+    padding-block: 0.25rem;
+}
+
+nav li {
     list-style-type: none;
 }
 
@@ -320,14 +324,24 @@ div:has(iframe) {
     }
 }
 
+.ce-headline-left {
+    text-align: left;
+}
 .ce-headline-center {
     text-align: center;
 }
 .ce-headline-right {
     text-align: right;
 }
-.ce-headline-left {
-    text-align: left;
+
+.text-start {
+    text-align: start;
+}
+.text-center {
+    text-align: center;
+}
+.text-end {
+    text-align: end;
 }
 
 .frame-ruler-after {
@@ -336,4 +350,17 @@ div:has(iframe) {
 
 .frame-full-width {
     width: 100%;
+}
+
+/* Tables */
+table {
+    width: 100%;
+
+    tr:nth-child(odd) {
+        background-color: var(--color-black-10);
+    }
+
+    td {
+        padding: 0.3rem 0.5rem;
+    }
 }
