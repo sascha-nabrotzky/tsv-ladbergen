@@ -1,0 +1,22 @@
+<f:asset.css
+    identifier="css-tsv/accordion"
+    href="{cb:assetPath()}/frontend.css"
+/>
+<f:asset.script
+    identifier="js-tsv/accordion"
+    src="{cb:assetPath()}/frontend.js"
+/>
+
+<section class="accordion-container">
+    <f:if condition="{data.header}">
+        <h6 class="headline">{data.header}</h6>
+    </f:if>
+    <f:for each="{data.collection}" as="accordion-item">
+        <details>
+            <summary class="summary">{accordion-item.header}</summary>
+            <div class="answer">
+                <f:format.html> {accordion-item.answer} </f:format.html>
+            </div>
+        </details>
+    </f:for>
+</section>

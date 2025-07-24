@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="labels.xlf" source-language="en" date="2025-07-22T14:01:21+00:00" product-name="tsv/accordion">
+		<header/>
+		<body>
+			<trans-unit id="title">
+				<source>Accordion</source>
+			</trans-unit>
+			<trans-unit id="description">
+				<source>Description for Content Element tsv/accordion</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

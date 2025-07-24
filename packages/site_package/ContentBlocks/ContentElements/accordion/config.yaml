@@ -1,0 +1,29 @@
+name: tsv/accordion
+typeName: tsv_accordion
+group: default
+prefixFields: true
+prefixType: full
+description: "Accordion element for displaying questions and answers."
+basics:
+  - TYPO3/Appearance
+fields:
+  -
+    identifier: header
+    useExistingField: true
+  - 
+    identifier: collection
+    type: Collection
+    minitems: 1
+    fields:
+      -
+        identifier: header
+        useExistingField: true
+        label: Question
+        type: Text
+      -
+        identifier: answer
+        useExistingField: true
+        label: Answer
+        type: Textarea
+        enableRichtext: true
+        richtextConfiguration: default

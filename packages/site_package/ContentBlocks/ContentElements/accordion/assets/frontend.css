@@ -1,0 +1,45 @@
+.accordion-container {
+    margin-bottom: 3rem;
+
+    .headline {
+        margin-bottom: 2rem;
+    }
+
+    details {
+        border-bottom: 1px solid var(--color-black);
+        padding-bottom: 2rem;
+    }
+
+    details:not(:last-of-type) {
+        margin-bottom: 2rem;
+    }
+
+    details[open] .answer {
+        animation: animateDown 0.3s linear forwards;
+    }
+
+    .summary {
+        font-size: var(--fs-xl);
+        font-weight: 700;
+        cursor: pointer;
+
+        &::marker {
+            color: var(--color-primary);
+        }
+
+        + .answer {
+            padding-left: 1rem;
+        }
+    }
+}
+
+@keyframes animateDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
