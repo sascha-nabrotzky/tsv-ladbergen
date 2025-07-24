@@ -94,6 +94,11 @@
         var(--color-tertiary) 50%,
         transparent
     );
+    --color-tertiary-darker: color-mix(
+        in srgb,
+        var(--color-tertiary) 75%,
+        var(--color-black)
+    );
     --color-spot-25: color-mix(in srgb, var(--color-spot) 25%, transparent);
     --color-spot-50: color-mix(in srgb, var(--color-spot) 50%, transparent);
     --color-spot-75: color-mix(in srgb, var(--color-spot) 75%, transparent);
@@ -222,6 +227,27 @@ nav li {
     outline-offset: 2px;
 }
 
+/* Buttons */
+.cta-button,
+.primary-button,
+.secondary-button,
+.tertiary-button {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+}
+
+.cta-button {
+    background-color: var(--color-tertiary-darker);
+    color: var(--color-white);
+    font-weight: 700;
+}
+
+.primary-button {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
 /* Navigation */
 menu {
     padding: 0;
@@ -238,6 +264,7 @@ nav {
     }
 }
 
+/* Links */
 a {
     color: inherit;
     text-underline-offset: 0.3rem;

@@ -17,8 +17,10 @@ const toggleButtonVisibility = () => {
         window.addEventListener('scroll', () => {
             if (window.scrollY > 500) {
                 scrollUpButton.classList.remove('scroll-up-button--hidden');
+                scrollUpButton.removeAttribute('aria-hidden');
             } else {
                 scrollUpButton.classList.add('scroll-up-button--hidden');
+                scrollUpButton.setAttribute('aria-hidden', 'true');
             }
         });
     }
