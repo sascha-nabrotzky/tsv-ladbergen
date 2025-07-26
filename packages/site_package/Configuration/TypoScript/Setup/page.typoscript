@@ -36,6 +36,7 @@ page {
   includeJSFooter {
     updownbutton = EXT:site_package/Resources/Public/JavaScript/up-down-button.js
     openclosemobilenav = EXT:site_package/Resources/Public/JavaScript/open-close-mobile-nav.js
+    setIframeHeight = EXT:site_package/Resources/Public/JavaScript/set-iframe-height.js
   }
 
   bodyTagCObject = TEXT

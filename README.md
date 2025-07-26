@@ -1,60 +1,87 @@
-# TYPO3 CMS Base Distribution
+# TSV Ladbergen Website – TYPO3 Projekt
 
-Get going quickly with TYPO3 CMS.
+Dies ist das Repository für die Vereinswebsite des TSV Ladbergen, basierend auf TYPO3 CMS.
 
-## Prerequisites
+## Voraussetzungen
 
-* PHP 8.2
-* [Composer](https://getcomposer.org/download/)
+- PHP 8.2 oder höher
+- [Composer](https://getcomposer.org/download/)
+- Datenbank (z.B. MySQL/MariaDB)
+- Optional: DDEV für lokale Entwicklung
 
-## Quickstart
+## Installation
 
-* `composer create-project typo3/cms-base-distribution project-name ^12`
-* `cd project-name`
+1. Repository klonen:
+   ```bash
+   git clone <REPO-URL> tsv-ladbergen
+   cd tsv-ladbergen
+   ```
 
-### Setup
+2. Abhängigkeiten installieren:
+   ```bash
+   composer install
+   ```
 
-To start an interactive installation, you can do so by executing the following
-command and then follow the wizard:
+3. TYPO3 Setup ausführen (interaktiv):
+   ```bash
+   composer exec typo3 setup
+   ```
 
-```bash
-composer exec typo3 setup
-```
+   Oder unbeaufsichtigt:
+   ```bash
+   composer exec -- typo3 setup \
+     --no-interaction \
+     --driver=mysqli \
+     --username=... \
+     --password=... \
+     --host=127.0.0.1 \
+     --port=3306 \
+     --dbname=typo3 \
+     --admin-username=admin \
+     --admin-email="email@domain.de" \
+     --admin-user-password=deinPasswort \
+     --project-name="TSV Ladbergen Website" \
+     --create-site="https://localhost/"
+   ```
 
-### Setup unattended (optional)
+4. Optional: DDEV für lokale Entwicklung aktivieren:
+   ```bash
+   ddev start
+   ```
 
-If you're a more advanced user, you might want to leverage the unattended installation.
-To do this, you need to execute the following command and substitute the arguments
-with your own environment configuration.
+## Entwicklung
 
-```bash
-composer exec -- typo3 setup \
-    --no-interaction \
-    --driver=mysqli \
-    --username=typo3 \
-    --password=typo3 \
-    --host=127.0.0.1 \
-    --port=3306 \
-    --dbname=typo3 \
-    --admin-username=admin \
-    --admin-email="info@typo3.org" \
-    --admin-user-password=password \
-    --project-name="My TYPO3 Project" \
-    --create-site="https://localhost/"
-```
+- Lokalen PHP-Server starten:
+  ```bash
+  TYPO3_CONTEXT=Development php -S localhost:8000 -t public
+  ```
+  Dann im Browser `http://localhost:8000` öffnen.
 
-### Development server
+- Für DDEV:
+  ```bash
+  ddev launch
+  ```
 
-While it's advised to use a more sophisticated web server such as
-Apache 2 or Nginx, you can instantly run the project by using PHPs` built-in
-[web server](https://secure.php.net/manual/en/features.commandline.webserver.php).
+## Verzeichnisstruktur
 
-* `TYPO3_CONTEXT=Development php -S localhost:8000 -t public`
-* open your browser at "http://localhost:8000"
+- `public/` – Webroot, Einstiegspunkt für den Webserver
+- `packages/site_package/` – Eigenes TYPO3 Site Package (Konfiguration, Templates, Ressourcen)
+- `config/` – TYPO3 Konfigurationsdateien
+- `var/`, `vendor/` – System- und Abhängigkeitsverzeichnisse
 
-Please be aware that the built-in web server is single threaded and only meant
-to be used for development.
+## Nützliche Befehle
 
-## License
+- Xdebug aktivieren/deaktivieren (mit DDEV):
+  ```bash
+  ddev xdebug on
+  ddev xdebug off
+  ```
 
-GPL-2.0 or later
+- Composer Abhängigkeiten aktualisieren:
+  ```bash
+  composer update
+  ```
+
+## Lizenz
+
+GPL-2.0 oder später
