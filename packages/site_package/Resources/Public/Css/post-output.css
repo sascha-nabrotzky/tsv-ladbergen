@@ -302,7 +302,8 @@ li:not(nav li) {
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
 }
-nav li {
+nav li,
+.f3-widget-paginator {
     list-style-type: none;
 }
 :focus-visible {
@@ -352,7 +353,7 @@ nav li {
     cursor: pointer;
 }
 .cta-button {
-    background-color: var(--color-tertiary-darker);
+    background-color: var(--color-spot);
     color: var(--color-white);
     font-weight: 700;
 }

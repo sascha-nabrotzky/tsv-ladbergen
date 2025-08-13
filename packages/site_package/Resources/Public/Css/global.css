@@ -185,7 +185,8 @@ li:not(nav li) {
     padding-block: 0.25rem;
 }
 
-nav li {
+nav li,
+.f3-widget-paginator {
     list-style-type: none;
 }
 
@@ -239,7 +240,7 @@ nav li {
 }
 
 .cta-button {
-    background-color: var(--color-tertiary-darker);
+    background-color: var(--color-spot);
     color: var(--color-white);
     font-weight: 700;
 }
