@@ -10,7 +10,7 @@ config {
   # Falls OOOps and Error im FE nur angezeigt wird
   // contentObjectExceptionHandler = 0
   
-  headerComment = Programmed by Sascha Nabrotzky -> sascha-nabrotzky.github.io
+  headerComment = UX-Design and Development by https://sascha-nabrotzky.de
 
   # Spam protection for email addresses
   spamProtectEmailAddresses = -2

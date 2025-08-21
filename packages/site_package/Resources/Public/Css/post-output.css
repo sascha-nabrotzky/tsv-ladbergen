@@ -278,7 +278,7 @@ p {
 small {
     font-size: var(--fs-sm);
 }
-/* Global styling */
+/* Layout */
 html {
     scroll-behavior: smooth;
 }

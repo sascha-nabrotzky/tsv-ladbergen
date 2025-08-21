@@ -158,7 +158,7 @@ small {
     font-size: var(--fs-sm);
 }
 
-/* Global styling */
+/* Layout */
 html {
     scroll-behavior: smooth;
 }
@@ -293,9 +293,11 @@ figure {
         object-fit: cover;
     }
 }
+
 figcaption {
     margin-top: 0.5rem;
 }
+
 .ce-image img {
     max-width: 600px;
     height: auto;
@@ -304,9 +306,11 @@ figcaption {
         width: 100%;
     }
 }
+
 .ce-right .image {
     text-align: right;
 }
+
 .ce-center .image {
     text-align: center;
 }
