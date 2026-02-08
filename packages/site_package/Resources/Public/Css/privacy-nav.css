@@ -12,10 +12,6 @@
         column-gap: 2rem;
         row-gap: 1rem;
         color: var(--color-white-75);
-
-        li:last-of-type {
-            margin-left: auto;
-        }
     }
 
     @media (width <= 640px) {

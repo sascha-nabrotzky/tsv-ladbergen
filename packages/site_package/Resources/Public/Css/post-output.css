@@ -11,7 +11,7 @@
     box-sizing: border-box;
 }
 html {
-    font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+    font-family: system-ui,-apple-system,Segoe UI,Ubuntu,Cantarell,Noto Sans, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
         'Apple Color Emoji', 'Segoe UI Emoji';
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
@@ -295,8 +295,7 @@ header:has(:is(h1, h2, h3, h4, h5, h6)) > :last-child:not(.mobile-nav-wrapper) {
 }
 p {
     margin: 0.5rem 0;
-    -webkit-hyphens: auto;
-            hyphens: auto;
+    hyphens: auto;
 }
 li:not(nav li) {
     padding-top: 0.25rem;
@@ -920,9 +919,6 @@ footer .copyright {
         row-gap: 1rem;
         color: var(--color-white-75);
     }
-.privacy-nav menu li:last-of-type {
-            margin-left: auto;
-        }
 @media (max-width: 640px) {
 .privacy-nav {
         grid-column: 2 / 4;
