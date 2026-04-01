@@ -5,13 +5,15 @@
     flex-wrap: wrap;
     row-gap: 1rem;
 
-    menu {
+    ul {
         display: flex;
         flex: auto;
         flex-wrap: wrap;
         column-gap: 2rem;
-        row-gap: 1rem;
+        margin: 0;
+        padding: 0;
         color: var(--color-white-75);
+        row-gap: 1rem;
     }
 
     @media (width <= 640px) {

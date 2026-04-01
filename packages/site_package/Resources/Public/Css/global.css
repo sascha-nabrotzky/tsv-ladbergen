@@ -1,164 +1,10 @@
-/* source-sans-3-regular - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Source Sans 3';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/source-sans-3-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* source-sans-3-700 - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Source Sans 3';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/source-sans-3-v15-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* Custom Properties */
 :root {
-    --ff-sans: 'Source Sans 3', 'sans-serif';
-
-    --fs-xs: 0.7rem;
-    --fs-sm: 0.8rem; /* small */
-    --fs-base: 1.1rem; /* p 17.6 px*/
-    --fs-lg: 1.25rem; /* h6 */
-    --fs-xl: 1.563rem; /* h5 */
-    --fs-2xl: 1.953rem; /* h4 */
-    --fs-3xl: 2.441rem; /* h3 */
-    --fs-4xl: 3.052rem; /* h2 */
-    --fs-5xl: 3.815rem; /* h1 */
-
-    --lh-base: 1.3; /* p */
-
     --grid-cols-sm: minmax(1rem, 1fr) minmax(0, 40rem) minmax(0, 20rem)
         minmax(1rem, 1fr);
     --grid-cols-lg: minmax(2rem, 1fr) [extended-start] 5rem minmax(0, 40rem)
         minmax(0, 20rem) [extended-end] 5rem minmax(2rem, 1fr);
-
-    --color-primary: #328f31;
-    --color-secondary: #236422;
-    --color-tertiary: #318f8c;
-    --color-spot: #8f3134;
-    --color-black: #222222;
-    --color-white: #f5f5f5;
-    --color-black-10: color-mix(in srgb, var(--color-black) 10%, transparent);
-    --color-black-25: color-mix(in srgb, var(--color-black) 25%, transparent);
-    --color-black-50: color-mix(in srgb, var(--color-black) 50%, transparent);
-    --color-black-75: color-mix(in srgb, var(--color-black) 75%, transparent);
-    --color-white-25: color-mix(in srgb, var(--color-white) 25%, transparent);
-    --color-white-50: color-mix(in srgb, var(--color-white) 50%, transparent);
-    --color-white-75: color-mix(in srgb, var(--color-white) 75%, transparent);
-    --color-primary-25: color-mix(
-        in srgb,
-        var(--color-primary) 25%,
-        transparent
-    );
-    --color-primary-50: color-mix(
-        in srgb,
-        var(--color-primary) 50%,
-        transparent
-    );
-    --color-primary-75: color-mix(
-        in srgb,
-        var(--color-primary) 75%,
-        transparent
-    );
-    --color-secondary-25: color-mix(
-        in srgb,
-        var(--color-secondary) 25%,
-        transparent
-    );
-    --color-secondary-50: color-mix(
-        in srgb,
-        var(--color-secondary) 50%,
-        transparent
-    );
-    --color-secondary-75: color-mix(
-        in srgb,
-        var(--color-secondary) 50%,
-        transparent
-    );
-    --color-tertiary-25: color-mix(
-        in srgb,
-        var(--color-tertiary) 25%,
-        transparent
-    );
-    --color-tertiary-50: color-mix(
-        in srgb,
-        var(--color-tertiary) 50%,
-        transparent
-    );
-    --color-tertiary-75: color-mix(
-        in srgb,
-        var(--color-tertiary) 50%,
-        transparent
-    );
-    --color-tertiary-darker: color-mix(
-        in srgb,
-        var(--color-tertiary) 75%,
-        var(--color-black)
-    );
-    --color-spot-25: color-mix(in srgb, var(--color-spot) 25%, transparent);
-    --color-spot-50: color-mix(in srgb, var(--color-spot) 50%, transparent);
-    --color-spot-75: color-mix(in srgb, var(--color-spot) 75%, transparent);
-    --color-focus: rgb(255, 167, 0) /* Orange 500 */;
 }
 
-/* Headlines */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin-block: 0 0.5rem;
-    word-break: break-word;
-}
-
-h1 {
-    font-size: var(--fs-5xl);
-
-    @media (width <= 640px) {
-        font-size: var(--fs-3xl);
-    }
-}
-h2 {
-    font-size: var(--fs-4xl);
-
-    @media (width <= 640px) {
-        font-size: var(--fs-3xl);
-    }
-}
-h3 {
-    font-size: var(--fs-3xl);
-
-    @media (width <= 640px) {
-        font-size: var(--fs-2xl);
-    }
-}
-h4 {
-    font-size: var(--fs-2xl);
-
-    @media (width <= 640px) {
-        font-size: var(--fs-xl);
-    }
-}
-h5 {
-    font-size: var(--fs-xl);
-}
-h6 {
-    font-size: var(--fs-lg);
-}
-p {
-    line-height: var(--lh-base);
-    font-size: var(--fs-base);
-}
-small {
-    font-size: var(--fs-sm);
-}
-
-/* Layout */
 html {
     scroll-behavior: smooth;
 }
@@ -172,22 +18,8 @@ body {
     background-color: var(--color-white);
 }
 
-header:has(:is(h1, h2, h3, h4, h5, h6)) > :last-child:not(.mobile-nav-wrapper) {
-    margin-bottom: 1rem;
-}
-
-p {
-    margin: 0.5rem 0;
-    hyphens: auto;
-}
-
 li:not(nav li) {
     padding-block: 0.25rem;
-}
-
-nav li,
-.f3-widget-paginator {
-    list-style-type: none;
 }
 
 :focus-visible {
@@ -195,70 +27,16 @@ nav li,
     outline-offset: 2px;
 }
 
-/* Spacings from BE */
-.frame-space-before-extra-small {
-    margin-top: 1rem;
-}
-.frame-space-before-small {
-    margin-top: 2rem;
-}
-.frame-space-before-medium {
-    margin-top: 3rem;
-}
-.frame-space-before-large {
-    margin-top: 4rem;
-}
-.frame-space-before-extra-large {
-    margin-top: 5rem;
+nav li,
+.f3-widget-paginator {
+    list-style-type: none;
 }
 
-.frame-space-after-extra-small {
-    margin-bottom: 1rem;
-}
-.frame-space-after-small {
-    margin-bottom: 2rem;
-}
-.frame-space-after-medium {
-    margin-bottom: 3rem;
-}
-.frame-space-after-large {
-    margin-bottom: 4rem;
-}
-.frame-space-after-extra-large {
-    margin-bottom: 5rem;
-}
-
-/* Buttons */
-.cta-button,
-.primary-button,
-.secondary-button,
-.tertiary-button {
-    text-decoration: none;
-    padding: 1rem 2rem;
-    border-radius: 50px;
-    cursor: pointer;
-}
-
-.cta-button {
-    background-color: var(--color-spot);
-    color: var(--color-white);
-    font-weight: 700;
-}
-
-.primary-button {
-    background-color: var(--color-primary);
-    color: var(--color-white);
-}
-
-.secondary-button {
-    border: 1px solid var(--color-black);
-    background-color: transparent;
-}
-
-/* Navigation */
-menu {
-    padding: 0;
-    margin: 0;
+/* Links */
+a {
+    color: inherit;
+    text-underline-offset: 0.3rem;
+    text-decoration-thickness: 1px;
 }
 
 nav {
@@ -269,13 +47,6 @@ nav {
             color: inherit;
         }
     }
-}
-
-/* Links */
-a {
-    color: inherit;
-    text-underline-offset: 0.3rem;
-    text-decoration-thickness: 1px;
 }
 
 [data-layout='default'] .main-content-wrap header a {
@@ -298,105 +69,11 @@ figcaption {
     margin-top: 0.5rem;
 }
 
-.ce-image img {
-    max-width: 600px;
-    height: auto;
-
-    @media (width <= 600px) {
-        width: 100%;
-    }
-}
-
-.ce-right .image {
-    text-align: right;
-}
-
-.ce-center .image {
-    text-align: center;
-}
-
 /* Video */
 div:has(iframe) {
     display: flex;
     justify-content: center;
     padding-block: 2rem;
-}
-
-/* Text layout stylings */
-.frame-type-text.frame-layout-5 {
-    background-color: var(--color-primary);
-    text-align: center;
-    color: var(--color-white);
-    padding-block: 3rem;
-    rotate: 1deg;
-    border-radius: 4px;
-
-    header > *:nth-child(1) {
-        transform: skew(-2deg);
-        margin-bottom: 2rem;
-        box-shadow: 0px 10px 5px var(--color-black-25);
-        background-color: var(--color-spot);
-        padding-block: 0.5rem;
-        rotate: -2deg;
-        translate: -1.5rem;
-    }
-
-    h2,
-    p {
-        padding-inline: 1rem;
-    }
-
-    p {
-        font-size: var(--fs-xl);
-    }
-}
-
-.frame-category-headline header {
-    margin-bottom: 1.5rem;
-    border-bottom: 1px solid var(--color-black-25);
-
-    > * {
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-weight: 400;
-    }
-}
-
-.frame-type-image {
-    figure {
-        img {
-            object-fit: unset;
-            width: unset;
-        }
-    }
-}
-
-.ce-headline-left {
-    text-align: left;
-}
-.ce-headline-center {
-    text-align: center;
-}
-.ce-headline-right {
-    text-align: right;
-}
-
-.text-start {
-    text-align: start;
-}
-.text-center {
-    text-align: center;
-}
-.text-end {
-    text-align: end;
-}
-
-.frame-ruler-after {
-    border-bottom: 1px solid var(--color-black-25);
-}
-
-.frame-full-width {
-    width: 100%;
 }
 
 /* Tables */

@@ -1,14 +1,25 @@
-@import url('normalize.css');
-@import url('global.css');
-@import url('pageheader.css');
-@import url('main-nav.css');
-@import url('sub-nav.css');
-@import url('extended.css');
-@import url('main-content.css');
-@import url('footer.css');
-@import url('privacy-nav.css');
-@import url('club-nav.css');
-@import url('scroll-up-button.css');
-@import url('mobile-nav.css');
-@import url('breadcrumb.css');
-/* @import url('news.css'); imported with settings.cssFile = EXT:...*/
+@layer theme, base, layout, components;
+
+@import url('colors.css') layer(theme);
+@import url('typography.css') layer(theme);
+@import url('spacing.css') layer(theme);
+
+@import url('normalize.css') layer(base);
+@import url('global.css') layer(base);
+
+@import url('extended.css') layer(layout);
+@import url('main-content.css') layer(layout);
+
+@import url('buttons.css') layer(components);
+@import url('pageheader.css') layer(components);
+@import url('main-nav.css') layer(components);
+@import url('sub-nav.css') layer(components);
+@import url('footer.css') layer(components);
+@import url('privacy-nav.css') layer(components);
+@import url('club-nav.css') layer(components);
+@import url('scroll-up-button.css') layer(components);
+@import url('mobile-nav.css') layer(components);
+@import url('breadcrumb.css') layer(components);
+@import url('typo3-content-elements.css') layer(components);
+
+/* news.css imported with settings.cssFile = EXT:...*/

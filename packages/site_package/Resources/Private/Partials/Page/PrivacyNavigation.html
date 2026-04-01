@@ -3,7 +3,7 @@
         <span class="copyright">
             <f:cObject typoscriptObjectPath="lib.copyright" />
         </span>
-        <menu>
+        <ul>
             <f:for each="{privacyNavigation}" as="privacyNavItem">
                 <li
                     class="nav-item {f:if(condition: privacyNavItem.active, then: 'active')}"
@@ -18,6 +18,6 @@
                     </a>
                 </li>
             </f:for>
-        </menu>
+        </ul>
     </nav>
 </f:if>

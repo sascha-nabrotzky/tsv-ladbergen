@@ -1,0 +1,25 @@
+.cta-button,
+.primary-button,
+.secondary-button,
+.tertiary-button {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.cta-button {
+    background-color: var(--color-spot);
+    color: var(--color-white);
+    font-weight: 700;
+}
+
+.primary-button {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.secondary-button {
+    border: 1px solid var(--color-black);
+    background-color: transparent;
+}
