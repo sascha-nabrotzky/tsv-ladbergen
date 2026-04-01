@@ -362,6 +362,15 @@ div:has(iframe) {
     }
 }
 
+.frame-type-image {
+    figure {
+        img {
+            object-fit: unset;
+            width: unset;
+        }
+    }
+}
+
 .ce-headline-left {
     text-align: left;
 }

@@ -458,6 +458,12 @@ div:has(iframe) {
         letter-spacing: 2px;
         font-weight: 400;
     }
+.frame-type-image figure img {
+            -o-object-fit: initial;
+               object-fit: initial;
+            width: auto;
+            width: initial;
+        }
 .ce-headline-left {
     text-align: left;
 }

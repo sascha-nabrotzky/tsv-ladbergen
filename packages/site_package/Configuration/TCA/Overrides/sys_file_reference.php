@@ -18,6 +18,10 @@ $GLOBALS['TCA'][$table]['columns'][$field]['config'] = [
                      'title' => 'Hochformat',
                      'value' => 1 / 1.41
                  ],
+                 'Frei' => [
+                     'title' => 'Frei',
+                     'value' => 0.0
+                 ],
              ],
         ],
          'header' => [
