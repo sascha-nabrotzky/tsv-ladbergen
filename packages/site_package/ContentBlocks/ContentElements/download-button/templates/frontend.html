@@ -1,28 +1,34 @@
-<f:asset.css
-    identifier="content-block-css-tsv-tsv/download-button"
-    href="{cb:assetPath()}/frontend.css"
-/>
-<f:asset.script
-    identifier="content-block-js-tsv-tsv/download-button"
-    src="{cb:assetPath()}/frontend.js"
-/>
+<f:layout />
 
-<a
-    href="{f:uri.typolink(parameter: data.url)}"
-    class="download-button"
-    target="_blank"
->
-    <div class="download-button__type-icon">
-        <f:image
-            src="EXT:site_package/Resources/Public/ContentBlocks/tsv/download-button/PDF-Icon.png"
-            alt="PDF-Icon"
-        />
-    </div>
-    {data.header}
-    <div class="download-button__download-icon">
-        <f:image
-            src="EXT:site_package/Resources/Public/ContentBlocks/tsv/download-button/download.svg"
-            alt="Download Icon"
-        />
-    </div>
-</a>
+<f:section name="Header" />
+
+<f:section name="Main">
+    <f:asset.css
+        identifier="content-block-css-tsv-tsv/download-button"
+        href="{cb:assetPath()}/frontend.css"
+    />
+    <f:asset.script
+        identifier="content-block-js-tsv-tsv/download-button"
+        src="{cb:assetPath()}/frontend.js"
+    />
+
+    <a
+        href="{f:uri.typolink(parameter: data.url)}"
+        class="download-button"
+        target="_blank"
+    >
+        <div class="download-button__type-icon">
+            <f:image
+                src="EXT:site_package/Resources/Public/ContentBlocks/tsv/download-button/PDF-Icon.png"
+                alt="PDF-Icon"
+            />
+        </div>
+        {data.header}
+        <div class="download-button__download-icon">
+            <f:image
+                src="EXT:site_package/Resources/Public/ContentBlocks/tsv/download-button/download.svg"
+                alt="Download Icon"
+            />
+        </div>
+    </a>
+</f:section>

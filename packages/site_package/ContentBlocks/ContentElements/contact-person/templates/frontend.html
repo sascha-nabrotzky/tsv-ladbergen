@@ -1,68 +1,74 @@
-<f:asset.css
-    identifier="content-block-css-tsv-tsv/contact-person"
-    href="{cb:assetPath()}/frontend.css"
-/>
-<f:asset.script
-    identifier="content-block-js-tsv-tsv/contact-person"
-    src="{cb:assetPath()}/frontend.js"
-/>
+<f:layout />
 
-<f:if condition="{data.header}">
-    <h6 class="contact-person-headline">{data.header}</h6>
-</f:if>
-<div class="contact-person-wrapper">
-    <f:for each="{data.collection}" as="person">
-        <div class="container-wrapper">
-            <div class="contact-person-item">
-                <f:if condition="{person.image}">
-                    <f:then>
-                        <f:for each="{person.image}" as="image">
+<f:section name="Header" />
+
+<f:section name="Main">
+    <f:asset.css
+        identifier="content-block-css-tsv-tsv/contact-person"
+        href="{cb:assetPath()}/frontend.css"
+    />
+    <f:asset.script
+        identifier="content-block-js-tsv-tsv/contact-person"
+        src="{cb:assetPath()}/frontend.js"
+    />
+
+    <f:if condition="{data.header}">
+        <h6 class="contact-person-headline">{data.header}</h6>
+    </f:if>
+    <div class="contact-person-wrapper">
+        <f:for each="{data.collection}" as="person">
+            <div class="container-wrapper">
+                <div class="contact-person-item">
+                    <f:if condition="{person.image}">
+                        <f:then>
+                            <f:for each="{person.image}" as="image">
+                                <div class="image-wrapper">
+                                    <f:image
+                                        image="{image}"
+                                        alt="{image.alternative}"
+                                        cropVariant="menu"
+                                        maxWidth="200"
+                                    />
+                                </div>
+                            </f:for>
+                        </f:then>
+                        <f:else>
                             <div class="image-wrapper">
                                 <f:image
-                                    image="{image}"
-                                    alt="{image.alternative}"
-                                    cropVariant="menu"
+                                    src="EXT:site_package/Resources/Public/ContentBlocks/tsv/contact-person/placeholder.jpg"
+                                    alt=""
                                     maxWidth="200"
                                 />
                             </div>
-                        </f:for>
-                    </f:then>
-                    <f:else>
-                        <div class="image-wrapper">
-                            <f:image
-                                src="EXT:site_package/Resources/Public/ContentBlocks/tsv/contact-person/placeholder.jpg"
-                                alt=""
-                                maxWidth="200"
-                            />
+                        </f:else>
+                    </f:if>
+                    <div class="text-wrapper">
+                        <div>
+                            <h6 class="name">{person.header}</h6>
+                            <f:if condition="{person.text}">
+                                <p class="position">{person.text}</p>
+                            </f:if>
+                            <f:if condition="{person.info}">
+                                <p class="info">{person.info}</p>
+                            </f:if>
                         </div>
-                    </f:else>
-                </f:if>
-                <div class="text-wrapper">
-                    <div>
-                        <h6 class="name">{person.header}</h6>
-                        <f:if condition="{person.text}">
-                            <p class="position">{person.text}</p>
-                        </f:if>
-                        <f:if condition="{person.info}">
-                            <p class="info">{person.info}</p>
+                        <f:if condition="{person.email} || {person.phone}">
+                            <div class="links">
+                                <f:if condition="{person.email}">
+                                    <f:link.email
+                                        email="{person.email}"
+                                        subject="Anfrage von TSV-Website"
+                                        >E-Mail</f:link.email
+                                    >
+                                </f:if>
+                                <f:if condition="{person.phone}">
+                                    <a href="{person.phone}">{person.phone}</a>
+                                </f:if>
+                            </div>
                         </f:if>
                     </div>
-                    <f:if condition="{person.email} || {person.phone}">
-                        <div class="links">
-                            <f:if condition="{person.email}">
-                                <f:link.email
-                                    email="{person.email}"
-                                    subject="Anfrage von TSV-Website"
-                                    >E-Mail</f:link.email
-                                >
-                            </f:if>
-                            <f:if condition="{person.phone}">
-                                <a href="{person.phone}">{person.phone}</a>
-                            </f:if>
-                        </div>
-                    </f:if>
                 </div>
             </div>
-        </div>
-    </f:for>
-</div>
+        </f:for>
+    </div>
+</f:section>
