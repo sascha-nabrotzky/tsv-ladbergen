@@ -56,15 +56,6 @@
     }
 }
 
-.frame-type-image {
-    figure {
-        img {
-            object-fit: unset;
-            width: unset;
-        }
-    }
-}
-
 .frame-full-width {
     width: 100%;
 }
