@@ -23,5 +23,6 @@ TCEFORM.tt_content.frame_class {
    addItems {
       category-headline = Kategorie Überschrift
       full-width = Vollbreite
+      centered = Zentriert
    }
 }

@@ -80,3 +80,9 @@
 .text-end {
     text-align: end;
 }
+
+/* Alignment */
+.frame-centered {
+    display: flex;
+    justify-content: center;
+}

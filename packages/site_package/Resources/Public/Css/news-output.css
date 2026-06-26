@@ -102,7 +102,7 @@
 
 .news.news-single .news-img-wrap .outer {
                 margin-top: 1rem;
-                margin-bottom: 1rem;
+                margin-bottom: 2rem;
             }
 
 .news.news-single .news-img-wrap img {
@@ -110,6 +110,10 @@
                 height: 100%;
                 -o-object-fit: cover;
                    object-fit: cover;
+            }
+
+.news.news-single .news-img-wrap .news-img-caption {
+                color: var(--color-black-75);
             }
 
 .news.news-single .teaser-text {
