@@ -1,0 +1,31 @@
+<f:layout />
+
+<f:section name="Header" />
+
+<f:section name="Main">
+    <f:asset.css
+        identifier="content-block-css-tsv/icon-with-link"
+        href="{cb:assetPath()}/frontend.css"
+    />
+    <f:if condition="{data.header}">
+        <h6 class="icon-with-link-headline">{data.header}</h6>
+    </f:if>
+    <div class="icon-with-link__container">
+        <f:if condition="{data.image}">
+            <div class="icon-with-link__icon">
+                <f:image
+                    image="{data.image.0}"
+                    alt="{data.image.0.alternative}"
+                    cropVariant="default"
+                />
+            </div>
+        </f:if>
+        <a
+            href="{f:uri.typolink(parameter: data.url)}"
+            class="icon-with-link__link"
+            target="_blank"
+        >
+            {data.linktitle}
+        </a>
+    </div>
+</f:section>

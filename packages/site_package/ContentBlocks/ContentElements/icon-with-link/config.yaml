@@ -1,0 +1,25 @@
+name: tsv/icon-with-link
+typeName: tsv_iconwithlink
+group: default
+prefixFields: true
+prefixType: full
+basics:
+  - TYPO3/Appearance
+fields:
+  -
+    identifier: header
+    useExistingField: true
+  -
+    identifier: image
+    useExistingField: true
+    label: Icon
+    allowed: jpeg,jpg,png,webp
+    maxitems: 1
+    type: File
+  -
+    identifier: linktitle
+    label: Titel
+    type: Text
+  -
+    identifier: url
+    type: Link
